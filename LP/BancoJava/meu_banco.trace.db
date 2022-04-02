@@ -1,0 +1,30 @@
+2022-03-30 20:50:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from pokemon [42102-199]
+2022-03-30 21:18:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from pokemon [42102-199]
+2022-03-30 21:18:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from POKEMON [42102-199]
+2022-03-30 21:18:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from POKEMON  [42102-199]
+2022-03-30 21:19:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from POKEMON [42102-199]
+2022-03-30 21:20:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from POKEMON [42102-199]
+2022-03-30 21:20:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select * from POKEMON; [42102-199]
+2022-03-30 21:21:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select*from POKEMON [42102-199]
+2022-03-30 21:22:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select*from pokemon [42102-199]
+2022-03-30 21:27:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POKEMON" not found; SQL statement:
+select*from pokemon [42102-199]
