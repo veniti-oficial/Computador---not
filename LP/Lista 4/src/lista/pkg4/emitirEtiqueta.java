@@ -6,11 +6,9 @@ public class emitirEtiqueta {
         
         pedido1.enderecoRemetente = "Shopping Aricandiva, 5555";
         pedido1.enderecoDestinatario = "avenida arraias do araguaia, 16";
+   
         
         
-        System.out.println(String.format("**** ETIQUETA PARA ENVIO****\n\n"
-                + "endereõ do remetente = %s\n"
-                + "endereço do destinário = %s\n"
-                + ""));
+        pedido1.calcularFrete(52.00, "Pequeno", 30.00);
     }
 }
