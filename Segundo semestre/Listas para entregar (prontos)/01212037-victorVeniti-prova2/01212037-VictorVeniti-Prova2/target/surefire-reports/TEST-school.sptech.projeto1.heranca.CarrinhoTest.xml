@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="school.sptech.projeto1.heranca.CarrinhoTest" time="0.025" tests="16" errors="4" skipped="0" failures="6">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/test-classes:/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/classes:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/victor/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/victor/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/victor/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/victor/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/home/victor/.sdkman/candidates/java/11.0.10.hs-adpt/lib"/>
+    <property name="sun.java.command" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/surefire/surefirebooter460626025947888655.jar /home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/surefire 2022-05-17T23-53-56_716-jvmRun1 surefire14625182725788004953tmp surefire_06462318113512428348tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/test-classes:/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/classes:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/home/victor/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/victor/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/home/victor/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar:/home/victor/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/home/victor/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/victor"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="/home/victor/.sdkman/candidates/java/11.0.10.hs-adpt"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto/target/surefire/surefirebooter460626025947888655.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.10+9"/>
+    <property name="user.name" value="victor"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-110-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
+    <property name="maven.ext.class.path" value="/snap/netbeans/58/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="localRepository" value="/home/victor/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.10"/>
+    <property name="user.dir" value="/home/victor/Downloads/projeto2-heranca-incompleto (1)/projeto2-heranca-incompleto"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vm.version" value="11.0.10+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="dadoUmValorValidoMetodoAdicionarProdutoDeveAdicionarOProdutoNoCarrinho" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.dadoUmValorValidoMetodoAdicionarProdutoDeveAdicionarOProdutoNoCarrinho(CarrinhoTest.java:41)
+</error>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@37271612]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579, school.sptech.projeto1.heranca.ProdutoInternacional@58ea606c]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579, school.sptech.projeto1.heranca.ProdutoInternacional@58ea606c, school.sptech.projeto1.heranca.ProdutoInternacional@6f45df59]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579, school.sptech.projeto1.heranca.ProdutoInternacional@58ea606c, school.sptech.projeto1.heranca.ProdutoInternacional@6f45df59, school.sptech.projeto1.heranca.ProdutoInternacional@38e79ae3]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579, school.sptech.projeto1.heranca.ProdutoInternacional@58ea606c, school.sptech.projeto1.heranca.ProdutoInternacional@6f45df59, school.sptech.projeto1.heranca.ProdutoInternacional@38e79ae3, school.sptech.projeto1.heranca.ProdutoInternacional@63070bab]
+[school.sptech.projeto1.heranca.Produto@37271612, school.sptech.projeto1.heranca.Produto@37883b97, school.sptech.projeto1.heranca.Produto@6ab778a, school.sptech.projeto1.heranca.Produto@4e3958e7, school.sptech.projeto1.heranca.Produto@77f80c04, school.sptech.projeto1.heranca.Produto@1dac5ef, school.sptech.projeto1.heranca.Produto@5c90e579, school.sptech.projeto1.heranca.ProdutoInternacional@58ea606c, school.sptech.projeto1.heranca.ProdutoInternacional@6f45df59, school.sptech.projeto1.heranca.ProdutoInternacional@38e79ae3, school.sptech.projeto1.heranca.ProdutoInternacional@63070bab, school.sptech.projeto1.heranca.Produto@68e5eea7]
+]]></system-out>
+  </testcase>
+  <testcase name="dadoUmValorInvalidoMetodoAdicionarProdutoNaoDeveAdicionarOProdutoNoCarrinho" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.dadoUmValorInvalidoMetodoAdicionarProdutoNaoDeveAdicionarOProdutoNoCarrinho(CarrinhoTest.java:51)
+</error>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@5609159b]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b, school.sptech.projeto1.heranca.Produto@394a2528]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b, school.sptech.projeto1.heranca.Produto@394a2528, school.sptech.projeto1.heranca.ProdutoInternacional@6236eb5f]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b, school.sptech.projeto1.heranca.Produto@394a2528, school.sptech.projeto1.heranca.ProdutoInternacional@6236eb5f, school.sptech.projeto1.heranca.ProdutoInternacional@7c1e2a9e]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b, school.sptech.projeto1.heranca.Produto@394a2528, school.sptech.projeto1.heranca.ProdutoInternacional@6236eb5f, school.sptech.projeto1.heranca.ProdutoInternacional@7c1e2a9e, school.sptech.projeto1.heranca.ProdutoInternacional@fa36558]
+[school.sptech.projeto1.heranca.Produto@5609159b, school.sptech.projeto1.heranca.Produto@2118cddf, school.sptech.projeto1.heranca.Produto@17a7f733, school.sptech.projeto1.heranca.Produto@68567e20, school.sptech.projeto1.heranca.Produto@76ed1b7c, school.sptech.projeto1.heranca.Produto@11fc564b, school.sptech.projeto1.heranca.Produto@394a2528, school.sptech.projeto1.heranca.ProdutoInternacional@6236eb5f, school.sptech.projeto1.heranca.ProdutoInternacional@7c1e2a9e, school.sptech.projeto1.heranca.ProdutoInternacional@fa36558, school.sptech.projeto1.heranca.ProdutoInternacional@672872e1]
+]]></system-out>
+  </testcase>
+  <testcase name="quandoNomeInvalidoMetodoFindProdutoPeloNomeDeveRetornarNull" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.003"/>
+  <testcase name="quandoIndiceInvalidoMetodoFindProdutoPeloIndiceDeveRetornarNull" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.002"/>
+  <testcase name="quandoNomeValidoCaixaBaixaMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.002">
+    <failure message="expected: &lt;school.sptech.projeto1.heranca.Produto@574b560f&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <school.sptech.projeto1.heranca.Produto@574b560f> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoNomeValidoCaixaBaixaMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado(CarrinhoTest.java:114)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@11c9af63]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28, school.sptech.projeto1.heranca.Produto@3943a2be]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28, school.sptech.projeto1.heranca.Produto@3943a2be, school.sptech.projeto1.heranca.ProdutoInternacional@343570b7]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28, school.sptech.projeto1.heranca.Produto@3943a2be, school.sptech.projeto1.heranca.ProdutoInternacional@343570b7, school.sptech.projeto1.heranca.ProdutoInternacional@157853da]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28, school.sptech.projeto1.heranca.Produto@3943a2be, school.sptech.projeto1.heranca.ProdutoInternacional@343570b7, school.sptech.projeto1.heranca.ProdutoInternacional@157853da, school.sptech.projeto1.heranca.ProdutoInternacional@71c3b41]
+[school.sptech.projeto1.heranca.Produto@11c9af63, school.sptech.projeto1.heranca.Produto@757acd7b, school.sptech.projeto1.heranca.Produto@36b4fe2a, school.sptech.projeto1.heranca.Produto@574b560f, school.sptech.projeto1.heranca.Produto@ba54932, school.sptech.projeto1.heranca.Produto@28975c28, school.sptech.projeto1.heranca.Produto@3943a2be, school.sptech.projeto1.heranca.ProdutoInternacional@343570b7, school.sptech.projeto1.heranca.ProdutoInternacional@157853da, school.sptech.projeto1.heranca.ProdutoInternacional@71c3b41, school.sptech.projeto1.heranca.ProdutoInternacional@236e3f4e]
+]]></system-out>
+  </testcase>
+  <testcase name="aoPassarUmValorValidoMetodoRemoverProdutoDeveRemoverOProdutoDaLista" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.aoPassarUmValorValidoMetodoRemoverProdutoDeveRemoverOProdutoDaLista(CarrinhoTest.java:60)
+</error>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@36d585c]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b, school.sptech.projeto1.heranca.Produto@55f616cf]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b, school.sptech.projeto1.heranca.Produto@55f616cf, school.sptech.projeto1.heranca.ProdutoInternacional@1356d4d4]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b, school.sptech.projeto1.heranca.Produto@55f616cf, school.sptech.projeto1.heranca.ProdutoInternacional@1356d4d4, school.sptech.projeto1.heranca.ProdutoInternacional@c03cf28]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b, school.sptech.projeto1.heranca.Produto@55f616cf, school.sptech.projeto1.heranca.ProdutoInternacional@1356d4d4, school.sptech.projeto1.heranca.ProdutoInternacional@c03cf28, school.sptech.projeto1.heranca.ProdutoInternacional@1329eff]
+[school.sptech.projeto1.heranca.Produto@36d585c, school.sptech.projeto1.heranca.Produto@87a85e1, school.sptech.projeto1.heranca.Produto@671a5887, school.sptech.projeto1.heranca.Produto@5552768b, school.sptech.projeto1.heranca.Produto@3c947bc5, school.sptech.projeto1.heranca.Produto@609db43b, school.sptech.projeto1.heranca.Produto@55f616cf, school.sptech.projeto1.heranca.ProdutoInternacional@1356d4d4, school.sptech.projeto1.heranca.ProdutoInternacional@c03cf28, school.sptech.projeto1.heranca.ProdutoInternacional@1329eff, school.sptech.projeto1.heranca.ProdutoInternacional@6497b078]
+]]></system-out>
+  </testcase>
+  <testcase name="aoAdicionarProdutosMetodoParcelarProdutoDeveCalcularOValorDosItensParceladoEmTresVezes" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0"/>
+  <testcase name="quando4ProdutosInternacionaisAdicionadosMetodoCountProdutosInternacionaisDeveRetornar4" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <failure message="expected: &lt;4&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <4> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quando4ProdutosInternacionaisAdicionadosMetodoCountProdutosInternacionaisDeveRetornar4(CarrinhoTest.java:151)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@7e9131d5]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092, school.sptech.projeto1.heranca.Produto@44a7bfbc]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092, school.sptech.projeto1.heranca.Produto@44a7bfbc, school.sptech.projeto1.heranca.ProdutoInternacional@4ef37659]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092, school.sptech.projeto1.heranca.Produto@44a7bfbc, school.sptech.projeto1.heranca.ProdutoInternacional@4ef37659, school.sptech.projeto1.heranca.ProdutoInternacional@776b83cc]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092, school.sptech.projeto1.heranca.Produto@44a7bfbc, school.sptech.projeto1.heranca.ProdutoInternacional@4ef37659, school.sptech.projeto1.heranca.ProdutoInternacional@776b83cc, school.sptech.projeto1.heranca.ProdutoInternacional@37858383]
+[school.sptech.projeto1.heranca.Produto@7e9131d5, school.sptech.projeto1.heranca.Produto@2e1d27ba, school.sptech.projeto1.heranca.Produto@61d6015a, school.sptech.projeto1.heranca.Produto@2525ff7e, school.sptech.projeto1.heranca.Produto@524d6d96, school.sptech.projeto1.heranca.Produto@152aa092, school.sptech.projeto1.heranca.Produto@44a7bfbc, school.sptech.projeto1.heranca.ProdutoInternacional@4ef37659, school.sptech.projeto1.heranca.ProdutoInternacional@776b83cc, school.sptech.projeto1.heranca.ProdutoInternacional@37858383, school.sptech.projeto1.heranca.ProdutoInternacional@4e268090]
+]]></system-out>
+  </testcase>
+  <testcase name="quandoCategoriaInvalidaMetodoFindProdutoPorCategoriaDeveRetornarUmaListaVazia" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaInvalidaMetodoFindProdutoPorCategoriaDeveRetornarUmaListaVazia(CarrinhoTest.java:144)
+</error>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@306cf3ea]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734, school.sptech.projeto1.heranca.Produto@3541cb24]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734, school.sptech.projeto1.heranca.Produto@3541cb24, school.sptech.projeto1.heranca.ProdutoInternacional@2177849e]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734, school.sptech.projeto1.heranca.Produto@3541cb24, school.sptech.projeto1.heranca.ProdutoInternacional@2177849e, school.sptech.projeto1.heranca.ProdutoInternacional@40cb8df7]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734, school.sptech.projeto1.heranca.Produto@3541cb24, school.sptech.projeto1.heranca.ProdutoInternacional@2177849e, school.sptech.projeto1.heranca.ProdutoInternacional@40cb8df7, school.sptech.projeto1.heranca.ProdutoInternacional@13b13b5d]
+[school.sptech.projeto1.heranca.Produto@306cf3ea, school.sptech.projeto1.heranca.Produto@2beee7ff, school.sptech.projeto1.heranca.Produto@5136d012, school.sptech.projeto1.heranca.Produto@5939a379, school.sptech.projeto1.heranca.Produto@e1de817, school.sptech.projeto1.heranca.Produto@52102734, school.sptech.projeto1.heranca.Produto@3541cb24, school.sptech.projeto1.heranca.ProdutoInternacional@2177849e, school.sptech.projeto1.heranca.ProdutoInternacional@40cb8df7, school.sptech.projeto1.heranca.ProdutoInternacional@13b13b5d, school.sptech.projeto1.heranca.ProdutoInternacional@2892dae4]
+]]></system-out>
+  </testcase>
+  <testcase name="quandoIndiceValidoMetodoFindProdutoPeloIndiceDeveRetornarOProdutoEncontrado" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001"/>
+  <testcase name="getProdutoInternacionalDaListaPeloIndice" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001"/>
+  <testcase name="quandoCategoriaValidaECaixaAltaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0">
+    <failure message="expected: &lt;[school.sptech.projeto1.heranca.ProdutoInternacional@10959ece, school.sptech.projeto1.heranca.ProdutoInternacional@3a6bb9bf]&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[school.sptech.projeto1.heranca.ProdutoInternacional@10959ece, school.sptech.projeto1.heranca.ProdutoInternacional@3a6bb9bf]> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaValidaECaixaAltaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados(CarrinhoTest.java:137)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@77eca502]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68, school.sptech.projeto1.heranca.Produto@49dc7102]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68, school.sptech.projeto1.heranca.Produto@49dc7102, school.sptech.projeto1.heranca.ProdutoInternacional@6b8ca3c8]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68, school.sptech.projeto1.heranca.Produto@49dc7102, school.sptech.projeto1.heranca.ProdutoInternacional@6b8ca3c8, school.sptech.projeto1.heranca.ProdutoInternacional@68c72235]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68, school.sptech.projeto1.heranca.Produto@49dc7102, school.sptech.projeto1.heranca.ProdutoInternacional@6b8ca3c8, school.sptech.projeto1.heranca.ProdutoInternacional@68c72235, school.sptech.projeto1.heranca.ProdutoInternacional@10959ece]
+[school.sptech.projeto1.heranca.Produto@77eca502, school.sptech.projeto1.heranca.Produto@3246fb96, school.sptech.projeto1.heranca.Produto@2e222612, school.sptech.projeto1.heranca.Produto@61386958, school.sptech.projeto1.heranca.Produto@73ee04c8, school.sptech.projeto1.heranca.Produto@7671cb68, school.sptech.projeto1.heranca.Produto@49dc7102, school.sptech.projeto1.heranca.ProdutoInternacional@6b8ca3c8, school.sptech.projeto1.heranca.ProdutoInternacional@68c72235, school.sptech.projeto1.heranca.ProdutoInternacional@10959ece, school.sptech.projeto1.heranca.ProdutoInternacional@3a6bb9bf]
+]]></system-out>
+  </testcase>
+  <testcase name="quandoNomeValidoMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <failure message="expected: &lt;school.sptech.projeto1.heranca.Produto@346d61be&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <school.sptech.projeto1.heranca.Produto@346d61be> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoNomeValidoMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado(CarrinhoTest.java:106)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@65f095f8]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66, school.sptech.projeto1.heranca.Produto@3d1cfad4]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66, school.sptech.projeto1.heranca.Produto@3d1cfad4, school.sptech.projeto1.heranca.ProdutoInternacional@62230c58]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66, school.sptech.projeto1.heranca.Produto@3d1cfad4, school.sptech.projeto1.heranca.ProdutoInternacional@62230c58, school.sptech.projeto1.heranca.ProdutoInternacional@2cd2a21f]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66, school.sptech.projeto1.heranca.Produto@3d1cfad4, school.sptech.projeto1.heranca.ProdutoInternacional@62230c58, school.sptech.projeto1.heranca.ProdutoInternacional@2cd2a21f, school.sptech.projeto1.heranca.ProdutoInternacional@2e55dd0c]
+[school.sptech.projeto1.heranca.Produto@65f095f8, school.sptech.projeto1.heranca.Produto@59af0466, school.sptech.projeto1.heranca.Produto@3e6ef8ad, school.sptech.projeto1.heranca.Produto@346d61be, school.sptech.projeto1.heranca.Produto@55536d9e, school.sptech.projeto1.heranca.Produto@747edf66, school.sptech.projeto1.heranca.Produto@3d1cfad4, school.sptech.projeto1.heranca.ProdutoInternacional@62230c58, school.sptech.projeto1.heranca.ProdutoInternacional@2cd2a21f, school.sptech.projeto1.heranca.ProdutoInternacional@2e55dd0c, school.sptech.projeto1.heranca.ProdutoInternacional@74455848]
+]]></system-out>
+  </testcase>
+  <testcase name="aoAdicionarProdutosMetodoCalcularTotalDeveCalcularOValorDosItensDoCarrinho" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0"/>
+  <testcase name="quandoCategoriaValidaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.001">
+    <failure message="expected: &lt;[school.sptech.projeto1.heranca.ProdutoInternacional@272ed83b, school.sptech.projeto1.heranca.ProdutoInternacional@41fecb8b]&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <[school.sptech.projeto1.heranca.ProdutoInternacional@272ed83b, school.sptech.projeto1.heranca.ProdutoInternacional@41fecb8b]> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaValidaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados(CarrinhoTest.java:129)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@2f8dad04]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96, school.sptech.projeto1.heranca.Produto@a3d8174]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96, school.sptech.projeto1.heranca.Produto@a3d8174, school.sptech.projeto1.heranca.ProdutoInternacional@1ba9117e]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96, school.sptech.projeto1.heranca.Produto@a3d8174, school.sptech.projeto1.heranca.ProdutoInternacional@1ba9117e, school.sptech.projeto1.heranca.ProdutoInternacional@732c2a62]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96, school.sptech.projeto1.heranca.Produto@a3d8174, school.sptech.projeto1.heranca.ProdutoInternacional@1ba9117e, school.sptech.projeto1.heranca.ProdutoInternacional@732c2a62, school.sptech.projeto1.heranca.ProdutoInternacional@272ed83b]
+[school.sptech.projeto1.heranca.Produto@2f8dad04, school.sptech.projeto1.heranca.Produto@29e495ff, school.sptech.projeto1.heranca.Produto@41e1e210, school.sptech.projeto1.heranca.Produto@be35cd9, school.sptech.projeto1.heranca.Produto@4944252c, school.sptech.projeto1.heranca.Produto@44821a96, school.sptech.projeto1.heranca.Produto@a3d8174, school.sptech.projeto1.heranca.ProdutoInternacional@1ba9117e, school.sptech.projeto1.heranca.ProdutoInternacional@732c2a62, school.sptech.projeto1.heranca.ProdutoInternacional@272ed83b, school.sptech.projeto1.heranca.ProdutoInternacional@41fecb8b]
+]]></system-out>
+  </testcase>
+  <testcase name="quandoProdutosInternacionaisNaoAdicionadosMetodoCountProdutosInternacionaisDeveRetornar0" classname="school.sptech.projeto1.heranca.CarrinhoTest" time="0.002">
+    <failure message="expected: &lt;0&gt; but was: &lt;null&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoProdutosInternacionaisNaoAdicionadosMetodoCountProdutosInternacionaisDeveRetornar0(CarrinhoTest.java:164)
+]]></failure>
+    <system-out><![CDATA[[school.sptech.projeto1.heranca.Produto@1e6454ec]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b, school.sptech.projeto1.heranca.Produto@27ff5d15]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b, school.sptech.projeto1.heranca.Produto@27ff5d15, school.sptech.projeto1.heranca.ProdutoInternacional@4e096385]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b, school.sptech.projeto1.heranca.Produto@27ff5d15, school.sptech.projeto1.heranca.ProdutoInternacional@4e096385, school.sptech.projeto1.heranca.ProdutoInternacional@649bec2e]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b, school.sptech.projeto1.heranca.Produto@27ff5d15, school.sptech.projeto1.heranca.ProdutoInternacional@4e096385, school.sptech.projeto1.heranca.ProdutoInternacional@649bec2e, school.sptech.projeto1.heranca.ProdutoInternacional@693fe6c9]
+[school.sptech.projeto1.heranca.Produto@1e6454ec, school.sptech.projeto1.heranca.Produto@2accdbb5, school.sptech.projeto1.heranca.Produto@b62d79, school.sptech.projeto1.heranca.Produto@6631f5ca, school.sptech.projeto1.heranca.Produto@5ace1ed4, school.sptech.projeto1.heranca.Produto@1613674b, school.sptech.projeto1.heranca.Produto@27ff5d15, school.sptech.projeto1.heranca.ProdutoInternacional@4e096385, school.sptech.projeto1.heranca.ProdutoInternacional@649bec2e, school.sptech.projeto1.heranca.ProdutoInternacional@693fe6c9, school.sptech.projeto1.heranca.ProdutoInternacional@34f5090e]
+[school.sptech.projeto1.heranca.Produto@31e5415e]
+[school.sptech.projeto1.heranca.Produto@31e5415e, school.sptech.projeto1.heranca.Produto@a2431d0]
+[school.sptech.projeto1.heranca.Produto@31e5415e, school.sptech.projeto1.heranca.Produto@a2431d0, school.sptech.projeto1.heranca.Produto@1cbb87f3]
+[school.sptech.projeto1.heranca.Produto@31e5415e, school.sptech.projeto1.heranca.Produto@a2431d0, school.sptech.projeto1.heranca.Produto@1cbb87f3, school.sptech.projeto1.heranca.Produto@1a4013]
+]]></system-out>
+  </testcase>
+</testsuite>

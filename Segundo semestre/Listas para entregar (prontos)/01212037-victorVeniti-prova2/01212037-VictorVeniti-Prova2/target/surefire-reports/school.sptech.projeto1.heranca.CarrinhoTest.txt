@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: school.sptech.projeto1.heranca.CarrinhoTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 6, Errors: 4, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in school.sptech.projeto1.heranca.CarrinhoTest
+dadoUmValorValidoMetodoAdicionarProdutoDeveAdicionarOProdutoNoCarrinho  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.dadoUmValorValidoMetodoAdicionarProdutoDeveAdicionarOProdutoNoCarrinho(CarrinhoTest.java:41)
+
+dadoUmValorInvalidoMetodoAdicionarProdutoNaoDeveAdicionarOProdutoNoCarrinho  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.dadoUmValorInvalidoMetodoAdicionarProdutoNaoDeveAdicionarOProdutoNoCarrinho(CarrinhoTest.java:51)
+
+quandoNomeValidoCaixaBaixaMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <school.sptech.projeto1.heranca.Produto@574b560f> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoNomeValidoCaixaBaixaMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado(CarrinhoTest.java:114)
+
+aoPassarUmValorValidoMetodoRemoverProdutoDeveRemoverOProdutoDaLista  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.aoPassarUmValorValidoMetodoRemoverProdutoDeveRemoverOProdutoDaLista(CarrinhoTest.java:60)
+
+quando4ProdutosInternacionaisAdicionadosMetodoCountProdutosInternacionaisDeveRetornar4  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quando4ProdutosInternacionaisAdicionadosMetodoCountProdutosInternacionaisDeveRetornar4(CarrinhoTest.java:151)
+
+quandoCategoriaInvalidaMetodoFindProdutoPorCategoriaDeveRetornarUmaListaVazia  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaInvalidaMetodoFindProdutoPorCategoriaDeveRetornarUmaListaVazia(CarrinhoTest.java:144)
+
+quandoCategoriaValidaECaixaAltaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[school.sptech.projeto1.heranca.ProdutoInternacional@10959ece, school.sptech.projeto1.heranca.ProdutoInternacional@3a6bb9bf]> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaValidaECaixaAltaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados(CarrinhoTest.java:137)
+
+quandoNomeValidoMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <school.sptech.projeto1.heranca.Produto@346d61be> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoNomeValidoMetodoFindProdutoPeloNomeDeveRetornarOProdutoEncontrado(CarrinhoTest.java:106)
+
+quandoCategoriaValidaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[school.sptech.projeto1.heranca.ProdutoInternacional@272ed83b, school.sptech.projeto1.heranca.ProdutoInternacional@41fecb8b]> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoCategoriaValidaMetodoFindProdutoPorCategoriaDeveRetornarOsProdutosEncontrados(CarrinhoTest.java:129)
+
+quandoProdutosInternacionaisNaoAdicionadosMetodoCountProdutosInternacionaisDeveRetornar0  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0> but was: <null>
+	at school.sptech.projeto1.heranca.CarrinhoTest.quandoProdutosInternacionaisNaoAdicionadosMetodoCountProdutosInternacionaisDeveRetornar0(CarrinhoTest.java:164)
+

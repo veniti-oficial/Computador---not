@@ -1,0 +1,27 @@
+Ajuda para diagrama de classe -
+
+- O nome da Interface não pode ser Italico tem que ser normal.
+- Na classe abstrata o nome da classe abstrata e o método podem ser em Italico ou colocar antes <<Abstract>>.
+- lembrar de colocar a multiplicidade
+- nome de atributos e métodos são todas letras minuscular "media, calcularMédia"
+- seta tracejada e para interface e seta interissa para abstract.
+- A interface faz sentido quando não faz sentido usar a classe abstrata.
+- A classe abstrata usa quando é possivel usar gerança.
+- A classe Interface se usa quando as classes não podem gerar uma herança.
+
+
+Padrão de projeto - 
+
+- Um probelma que ocorre frequentemente e é usado um padrão de passo a passo para á solução.
+- São soluções que existem para problemas conhecidos/comuns.
+* Vantagens
+- Facilita a vida das pessoas.
+- Economia de tempo.
+- facilita  aocmunicação da equipe (Se todos conhecerem os padrões de projeto).
+
+
+Vetores - 
+
+- Vetor é uma linha ou coluna, Matrix são mais de uma dimensão
+- Matrix de duas dimensoes e como se deve a um excel colunas, de três dimensões é como se fosse um cubo mágico.
+- 
