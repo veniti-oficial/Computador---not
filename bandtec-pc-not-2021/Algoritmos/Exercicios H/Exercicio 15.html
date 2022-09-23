@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_qts" placeholder="qts elefantes"> <br>
+    <button onclick="contar()">Atazanar a médium</button> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function contar(){
+        var contador = 1;
+        var contador2 =1;
+        var quantidade = Number(inp_qts.value);
+        var incomodam = 'incomodam'
+ 
+
+
+
+        while(contador < quantidade){
+            contador++;
+            contador2++;
+            span_text.innerHTML += `1 elefante incomoda muita gente!<br>`
+            incomodam = incomodam + `,incomodam`
+            span_text.innerHTML += `${contador2} elefantes,${incomodam} muito mais!<br>`
+        }
+
+            
+            /*while(contador != 0){
+            span_text2.innerHTML += 'incomodam';
+            }*/
+        }   
+</script>

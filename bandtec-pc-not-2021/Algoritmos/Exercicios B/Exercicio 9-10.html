@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9-10</title>
+</head>
+<body>
+    Quantidade de Filhos com mais de 10 anos: <input type="text" name="" id="inp_filhos"> <br>
+    Quantidade de filhos com menos de 10 anos: <input type="text" name="" id="inp_filhosm">
+    <button onclick="calculo()">Calcular Auxilio Filhos</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var calculo = `${20 * inp_filhos.value}`
+        var calculom = `${30 * inp_filhosm.value}`
+        var resultado = `${Number(calculo) + Number(calculom)}`
+
+        span_text.innerHTML= `Voce tem ${inp_filhosm.value}menores de 10 anos e ${inp_filhos.value} a partir de 10 anos, logo seu "Auxilio Filhos" será de R$${resultado}`
+    }
+</script>

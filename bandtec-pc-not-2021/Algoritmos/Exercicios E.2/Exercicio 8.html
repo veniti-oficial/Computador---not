@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    quantidade de pães: <input type="text" name="" id="inp_paes"> <br>
+    quantidade bolachas: <input type="text" name="" id="inp_bolacha"> <br>
+    quantidade de achocolatados: <input type="text" name="" id="inp_choco"> <br><br>
+
+    <button onclick="calculo()">Verificar calorias</button> <br> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var pao = inp_paes.value * 50;
+        var bolacha = inp_bolacha.value * 80;
+        var copo = inp_choco.value * 70;
+        var total = pao + bolacha + copo;
+
+
+        if(total < 200) {
+            span_text.innerHTML = 'Parabéns, vai sair em forma da quarentena'
+        } else if(total > 400) {
+            span_text.innerHTML = 'Bom, acho que muitos não vão te reconhecer após a quarentena'
+        } else {span_text.innerHTML = 'Cuidado, vai ficar mais "fofinho(a)" após quarentena!'}
+    }
+</script>

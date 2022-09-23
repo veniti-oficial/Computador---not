@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 16</title>
+</head>
+<body>
+    <h2>O que faz um tri atleta</h2>
+
+    <button onclick="nadar()" id="but_nadar"> Nada</button>
+    <button onclick="correr()">corre</button>
+    <button onclick="pedalar()">Pedala</button>
+
+    <br>
+
+    <span id="span_foto"> <img src="" alt="" id="img_atleta"> </span>
+
+</body>
+</html>
+
+<script>
+    function nadar(){
+        /*img_atleta.innerHTML = './nadador.jpg'*/
+        span_foto.innerHTML = ''
+        span_foto.innerHTML = '<BR><img src="./nadador.jpg" alt="">'
+    }
+
+    function correr(){
+        /*img_atleta.src = './corredor.jpg'*/
+        span_foto.innerHTML = ''
+        span_foto.innerHTML = '<BR><img src="./corredor.jpg" alt="">'
+        
+    }
+
+    function pedalar(){
+        /*img_atleta.src = './ciclista.jpg'*/
+        span_foto.innerHTML = ''
+        span_foto.innerHTML = '<BR><img src="./ciclista.jpg" alt="">'
+    }
+
+</script>

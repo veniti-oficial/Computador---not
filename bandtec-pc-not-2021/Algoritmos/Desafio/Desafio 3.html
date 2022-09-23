@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+</head>
+
+<body>
+    <div id="div_sumir">
+        Nome: <input type="text" name="" id="inp_nome"> <br>
+        Banco: <input type="text" name="" id="inp_banco"> <br>
+        Agência: <input type="text" name="" id="inp_agencia"> <br>
+        Conta: <input type="text" name="" id="inp_conta"> <br>
+        Digito <input type="text" name="" id="inp_digito"> <br>
+        <button onclick="entrar()">Entrar</button>
+    </div>
+
+    <div id="div_aparecer" style="display: none;">
+        <select name="" id="sel_cartao">
+            <option value="">--Selecione--</option>
+            <option value="credito">Crédito</option>
+            <option value="debito">Débito</option>
+        </select> <br>
+        data: <input type="text" name="" id="inp_data"> <br>
+        valor da movimentação: <input type="text" name="" id="inp_movimentacao"> <br>
+        <button onclick="extrato()">Extrato</button>
+        <button onclick="mudar()">Mudar a conta</button> <br><br>
+
+        <span id="span_text"></span>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function entrar() {
+        var nome = inp_nome.value;
+        var banco = inp_banco.value;
+        var agencia = Number(inp_agencia.value);
+        var conta = Number(inp_conta.value);
+        var digito = Number(inp_digito.value);
+        var Numerodigito = ((conta / 11) % 10).toFixed();
+        console.log(Numerodigito);
+
+        if (nome.length < 2) {
+            alert('Nome invalido')
+            inp_nome.value = '';
+        }else if (banco != '001' && banco != '102' && banco != '237' && banco != '341' && isNaN(inp_banco.value)){
+            alert('Banco invalido')
+            inp_banco.value = '';
+        }else if(agencia < 0 || agencia > 999 || isNaN(inp_agencia.value)){
+            alert('Agencia Invalida');
+            inp_agencia.value = '';
+        }else if(conta < 0 || conta > 99999 || isNaN(inp_conta.value)){
+            alert('conta invalida');
+            inp_conta.value = '';
+        }else if(digito != Numerodigito){
+            alert('digito invalido')
+            inp_digito.value = '';
+        }else{
+            div_sumir.style.display = 'none'
+            div_aparecer.style.display = 'block'
+        }
+    }
+
+    function mudar(){
+        div_aparecer.style.display = 'none';
+        div_sumir.style.display = 'block';
+    }
+
+    function extrato(){
+        var data = inp_data.value;
+        var movimentacao = inp_movimentacao.value;
+        var total = 0;
+
+        if(sel_cartao.value == 'credito'){
+            span_text.innerHTML = `${data} - Saldo inicial R$${movimentacao}   ${sel_cartao.value} R$ 88888,99 Saldo final= R$ 77777,77`
+        }
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <button onclick="jogar()">Jogar dado</button> <br><br>
+
+    <img src="" alt="" id="img_dado">
+</body>
+</html>
+
+<script>
+    function jogar(){
+        var aleatorio = Math.random();
+        var Naleatorio = aleatorio * 6;
+        console.log(Naleatorio)        
+
+        if(Naleatorio.toFixed() == 1){
+            img_dado.src = './dado 1.png'
+        } else if(Naleatorio.toFixed() == 2){
+            img_dado.src = './dado 2.png'
+        }else if(Naleatorio.toFixed() == 3){
+            img_dado.src = './dado 3.png'
+        }else if(Naleatorio.toFixed() == 4){
+            img_dado.src = './dado 4.png'
+        }else if(Naleatorio.toFixed() == 5){
+            img_dado.src = './dado 5.png'
+        }else /*if(Naleatorio.toFixed() == 6)*/{
+            img_dado.src = './dado 6.png'
+        }
+    }
+</script>

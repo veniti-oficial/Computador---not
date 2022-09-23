@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    Nome da Empresa: <input type="text" name="" id="inp_nome"> <br>
+    Valor da bolsa: <input type="text" name="" id="inp_bolsa"> <br>
+    Valor do Vr: <input type="text" name="" id="inp_vr"> <br>
+    tempo de deslocamento: <input type="text" name="" id="inp_tempo"> <br>
+    <button onclick="analise()">É preferida?</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function analise(){
+        if(inp_bolsa.value >= 1800 || inp_vr.value >= 20 || inp_tempo.value <= 30 ){
+            span_text.innerHTML = `A empresa ${inp_nome.value} é uma de suas preferências`
+        }else{span_text.innerHTML = `A empresa ${inp_nome.value
+        } está fora da sua lista`}
+    }
+</script>

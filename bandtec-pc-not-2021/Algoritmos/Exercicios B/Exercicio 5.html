@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    Valor da passagem: <input type="text" name="" id="inp_oni"> <br>
+    Quantidade de Viagens: <input type="text" name="" id="inp_via"><br>
+    <button onclick="calc()">Calcular VT</button> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calc(){
+        var calculo = `${inp_oni.value * inp_via.value}`
+
+        span_text.innerHTML = `Você vai gastar por mês <U>R$ ${calculo}</U>`
+    }
+</script>

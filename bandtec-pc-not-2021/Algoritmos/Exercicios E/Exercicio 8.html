@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    Quantidade de kWh por mes: <input type="text" name="" id="inp_kwh"> <br>
+    <button onclick="calculo()">Calcular conta de luz</button> <br>
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+
+    var valor = 0;
+    function calculo(){
+        var conta = inp_kwh.value * 0.85;
+        valor = conta
+        var regra = 10/100 * valor
+
+        span_text.innerHTML = regra;
+
+       if(conta < 100){
+            valor = valor - regra;
+        }
+
+        alert(`valor da conta ${valor.toFixed(2)}`)
+    }
+</script>

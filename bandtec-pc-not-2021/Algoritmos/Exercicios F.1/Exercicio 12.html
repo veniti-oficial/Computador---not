@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <select name="" id="sel_marca">
+        <option value="">--Selecione--</option>
+        <option value="samsung">Samsung</option>
+        <option value="lg">LG</option>
+        <option value="mondial">Mondial</option>
+        <option value="britania">Britânia</option>
+    </select> <br>
+
+    Preço: <input type="text" name="" id="inp_preço"> <br>
+    <button onclick="avaliar()">Analisar compra</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function avaliar(){
+        if(inp_preço.value > 800  && inp_preço.value < 2000 && sel_marca.value == 'mondial' || sel_marca.value == 'britania'){
+        span_text.innerHTML = 'Na faixa de preço, porém marca não confiável'
+    } else if(inp_preço.value < 800){
+        span_text.innerHTML = 'Preço muito baixo'
+    }
+    else if(inp_preço.value > 2000){span_text.innerHTML = 'TV cara demais, Infelizmente'
+    } else {span_text.innerHTML = 'Essa TV pode entrar na sua lista!'}
+}
+
+
+/*sel_marca.value == 'mondial' || sel_marca.value == 'britania' && inp_preço.value > 800  && inp_preço.value < 2000*/
+
+</script>
+

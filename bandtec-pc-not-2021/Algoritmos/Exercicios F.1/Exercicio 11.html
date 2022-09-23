@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <select name="" id="sel_arroz">
+        <option value="">--Escolha--</option>
+        <option value="branco">Arroz branco</option>
+        <option value="integral">Arroz Integral</option>
+    </select> <br>
+    Tempo de cozimento em minutos: <input type="text" name="" id="inp_tempo"> <br>
+    Quantidade de sal em gramas: <input type="text" name="" id="inp_sal"> <br>
+    <button onclick="avaliar()">Avaliar Arroz</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function avaliar(){
+        if(inp_tempo.value < 10 && inp_sal.value < 10 || inp_tempo.value < 20 && inp_sal.value < 15){
+            span_text.innerHTML = 'Arroz perfeito'
+        } else{span_text.innerHTML = 'Seu arroz não está perfeito'}
+    }
+</script>

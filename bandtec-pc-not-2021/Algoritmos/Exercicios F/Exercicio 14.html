@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <div id="div_sumir">
+    Altura inicial para piloto: <input type="text" name="" id="inp_inicialP"> <br>
+    Altura Final para piloto: <input type="text" name="" id="inp_finalP"> <br> <br> <br>
+
+    Altura inicial para basquete: <input type="text" name="" id="inp_inicialB"> <br>
+    Altura final para basquete: <input type="text" name="" id="inp_finalB"> <br>
+
+    <button onclick="selecao()">Selecionar</button>
+</div>
+
+<div id="div_aparecer" style="display: none;">
+    <h2>Processo de Seleção de novos atletas</h2> <br>
+
+    <h5 id="h5_piloto"></h5>
+    <h5 id="h5_basquete"></h5>
+
+    Nome do candidato: <input type="text" name="" id="inp_nome"> <br>
+    Altura do candidato: <input type="text" name="" id="inp_altura"> <br> <br>
+
+    <select name="" id="sel_modalidade" onchange="modalidade()">
+        <option value="nenhum">-Escolha-</option>
+        <option value="piloto">Piloto</option>
+        <option value="basquete">Jogador de Basquete</option>
+    </select> <br><br>
+
+    <span id="span_text"></span>
+</div>
+
+</body>
+</html>
+
+<script>
+    function selecao(){
+
+        if(inp_inicialP.value >= 1 && inp_inicialB.value >= 1.5 && inp_finalP.value > inp_inicialP.value && inp_finalB.value > inp_inicialB.value){
+        div_sumir.style.display = 'none'
+        div_aparecer.style.display = 'block'
+        }else {alert('valores incorretos!')}
+
+        h5_piloto.innerHTML = `Critério de Seleção de piloto – altura entre ${inp_inicialP.value}M até ${inp_finalP.value}M`
+        h5_basquete.innerHTML = `Critério de Seleção de jogador de basquete – altura entre ${inp_inicialB.value}M até ${inp_finalB.value}M`
+    }
+
+    function modalidade(){
+        if(sel_modalidade.value == 'piloto' && inp_altura.value >= inp_inicialP.value && inp_altura.value <= inp_finalP.value){
+            span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} participará do processo de seleção de piloto<br>`
+            /*sel_modalidade.value = 'nenhum'*/
+        }
+        
+       /* else if(sel_modalidade.value == 'piloto' && inp_altura.value < inp_inicialP.value){
+            span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} não atende os requisitos<br>`
+
+        }
+
+        else if(sel_modalidade.value == 'piloto' && inp_altura.value > inp_finalP.value){
+            span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} não atende os requisitos<br>`
+
+        }*/
+
+        else if(sel_modalidade.value == 'basquete' && inp_altura.value >= inp_inicialB.value && inp_altura.value <= inp_finalB.value){
+            span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} participará do processo de seleção de basquete<br>`
+ 
+        }
+        
+        /*else if(sel_modalidade.value == 'basquete' && inp_altura.value < inp_inicialB.value )
+        {span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} não atende os requisitos<br>`
+        sel_modalidade.value = 'nenhum'
+        }*/
+
+        else /*if(sel_modalidade.value == 'basquete' && inp_altura.value > inp_finalB.value)*/{
+            span_text.innerHTML += `candidato ${inp_nome.value} com altura de ${inp_altura.value} não atende os requisitos<br>`
+            /*sel_modalidade.value = 'nenhum'*/
+        }
+        
+    }
+</script>

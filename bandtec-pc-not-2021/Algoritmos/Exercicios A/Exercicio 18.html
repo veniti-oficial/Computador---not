@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+</head>
+<body>
+    <img src="./sao paulo.png" alt="" style="width: 200px;" onclick="but_sp()" id="img_saopaulo">
+
+    <img src="" alt="" id="img_taçasp1" style="width: 100px;">
+    <img src="" alt="" id="img_taçasp2" style="width: 100px;">
+    <img src="" alt="" id="img_taçasp3" style="width: 100px;">
+
+    <img src="./Corinthans.jpg" alt="" style="width: 200px;" onclick="but_cor()" id="img_corinthans">
+
+    <img src="" alt="" id="img_taçaco1" style="width: 100px;">
+    <img src="" alt="" id="img_taçaco2" style="width: 100px;">
+
+    <img src="./santos.png" alt="" style="width: 200px;" onclick="but_sant()" id="img_santos">
+
+    <img src="" alt="" id="img_san1" width="100px">
+    <img src="" alt="" id="img_san2" width="100px">
+
+    <img src="./palmeiras.png" alt="" width="200px" onclick="but_palm()" id="img_palmeiras">
+
+    <img src="" alt="" id="img_p" width="200px">
+
+    <br>
+
+    <button onclick="but_resetar()" id="but_resetar1">Resetar programa</button>
+    <span id="span_condi"><button onclick="but_esconder()" id="but_sumir1">Esconder escudos</button></span>
+</body>
+</html>
+
+<script>
+    function but_sp(){
+        img_taçasp1.src = './taça.jpg'
+        img_taçasp2.src = './taça.jpg'
+        img_taçasp3.src = './taça.jpg'
+    }
+
+    function but_cor(){
+        img_taçaco1.src = './taça.jpg'
+        img_taçaco2.src = './taça.jpg'
+    }
+
+    function but_sant(){
+        img_san1.src = './taça.jpg'
+        img_san2.src = './taça.jpg'
+    }
+
+    function but_palm(){
+        img_p.src = './taça palmeiras.jpg'
+    }
+
+    function but_resetar(){
+        img_taçasp1.src = ''
+        img_taçasp2.src = ''
+        img_taçasp3.src = ''
+        img_taçaco1.src = ''
+        img_taçaco2.src = ''
+        img_san1.src = ''
+        img_san2.src = ''
+        img_p.src = ''
+        img_saopaulo.src = './sao paulo.png'
+        img_corinthans.src = './Corinthans.jpg'
+        img_santos.src = './santos.png'
+        img_palmeiras.src = './palmeiras.png'
+    }
+
+    function but_esconder(){
+        img_saopaulo.src = ''
+        img_corinthans.src = ''
+        img_santos.src = ''
+        img_palmeiras.src = ''
+        but_resetar1.innerHTML = 'Mostrar Escudos'
+        span_condi.innerHTML = ''
+    }
+</script>

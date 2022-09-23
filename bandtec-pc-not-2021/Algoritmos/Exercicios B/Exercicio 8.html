@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    Salario do trabalhador: <input type="text" name="" id="inp_salario"><br>
+
+    <button onclick="calculo()">Calcular descontos</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+
+        var inss = `${inp_salario.value * 0.1}`
+        var ib = `${inp_salario.value * 0.2}`
+        var total = `${Number(inss) + Number(ib)}`
+        var resultado = `${inp_salario.value - total}`
+
+        span_text.innerHTML = `Seus descontos derão de: <br>
+                                INSS:R$ ${inss} <br>
+                                IB:R$ ${ib}   <br>
+                                Total de descontos:R$ ${total} <br>
+                                Seu Salário,após os descontos será de:R$ ${resultado}`
+                                
+    }
+</script>

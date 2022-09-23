@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+</head>
+<body>
+    Temperatura do ambuente: <input type="text" name="" id="inp_temperatura"> <br>
+    <button onclick="calculo()">Verificar clima</button> <br><br>
+    
+    <span id="span_text"></span> <br>
+    <img src="" alt="" id="img_tempo" style="width: 200px;">
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_temperatura.value < 10){
+            span_text.innerHTML = `Apropriada p/ conservar alimento`
+            img_tempo.src = `./Alimento bom.jpg`
+        } else {span_text.innerHTML = `Inapropriada p/ conservar alimento`
+                img_tempo.src = `./alimento ruim.jpg`}
+    }
+</script>

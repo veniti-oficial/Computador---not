@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    Valor da Pizza: <input type="text" name="" id="inp_valorP"> <br>
+    Quantos amigos?: <input type="text" name="" id="inp_amigos">
+    <button onclick="calculo()">Rola a pizza?</button> <br> <br>
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var valor = inp_valorP.value / inp_amigos.value;
+
+        span_text.innerHTML = `Cada amigo vai pagar R$${valor}`
+
+        if(valor > 20){
+            span_text.innerHTML += `<br>Deu ruim! Pizza muito cara!`
+        }
+    }
+</script>

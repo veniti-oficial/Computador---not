@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <h3>Calculadora de cansaço do aluno Bandtec</h3>
+
+    Meio de tranporte:
+    <select name="" id="sel_transporte">
+        <option value="">--Escolha--</option>
+        <option value="onibus">Onibus</option>
+        <option value="metro">Metrô</option>
+        <option value="carro">Carro</option>
+        <option value="bicicleta">Bicicleta</option>
+        <option value="lotacao">Lotação</option>
+    </select> <br>
+
+    Distância da faculdade (KM): <input type="text" name="" id="inp_dist">
+
+    <button onclick="calculo()">Calcular cansaço</button>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        
+        /*if(inp_dist.value <= 10 || sel_transporte.value == 'carro' || sel_transporte.value == 'bicicleta'){
+            alert('Tá Tranquilo!')
+        } else if(sel_transporte.value == 'onibus' || sel_transporte.value == 'lotacao'){
+            alert('Vish... Vive cansado')
+    } else{alert('Um pouco cansado')}*/
+
+    if(inp_dist.value <= 10){
+        if(sel_transporte.value == 'carro' || sel_transporte.value == 'metro' || sel_transporte.value == 'onibus'){
+            alert('Tá tranks')
+        } else{alert('É ... um pouco cansado ...')}
+    } else{ if(sel_transporte.value == 'carro'){
+            alert('É ... um pouco cansado ...')   
+    } else if(sel_transporte.value == 'metro' || sel_transporte.value == 'onibus'){
+        alert('Bem cansado ...')
+    } else{alert('Vish ... tá só o pó ...')}
+}
+}
+</script>

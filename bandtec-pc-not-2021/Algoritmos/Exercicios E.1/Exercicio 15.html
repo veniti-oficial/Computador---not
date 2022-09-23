@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15</title>
+</head>
+<body>
+    Nome: <input type="text" name="" id="inp_nome"> <br>
+    idade: <input type="text" name="" id="inp_idade"> <br>
+    <button onclick="calculo()">Avaliar aluno</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_idade.value >= 18){
+            span_text.innerHTML = `${inp_nome.value} vamos tirar a CNH?` 
+        } else {
+            span_text.innerHTML = `${inp_nome.value} vai jogar PlayStation!`;
+            }
+        
+    }
+</script>

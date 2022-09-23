@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    Quantos filhos possui: <input type="text" name="" id="inp_filhos"> <br>
+
+    <button onclick="calculo()">Analisar familia</button> <br><br>
+    <span id="span_text"></span>
+
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_filhos.value >= 1){
+            span_text.innerHTML = `Não tem tv<br>`
+        }
+
+        if(inp_filhos.value >= 2){
+            span_text.innerHTML += `Nâo tem internet<br>`
+        }
+
+        if(inp_filhos.value >= 3){
+            span_text.innerHTML += `Não tem video game<br>` 
+        }
+
+        if(inp_filhos.value >= 4){
+            span_text.innerHTML += `Não tem Netflix`
+        }
+    }
+</script>

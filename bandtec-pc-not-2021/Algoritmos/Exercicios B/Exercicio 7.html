@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    Nome do aluno: <input type="text" id="inp_nome"> <br>
+    Quantidade de aulas: <input type="text" id="inp_aulas"> <br>
+    Quantidade de faltas: <input type="text" name="" id="inp_faltas"> <br>
+
+    <button onclick="calcular()">Calcular Frequência</button> <br>
+    <br>
+
+    <span id="span_text" style="color: blue;"></span> <br>
+
+    <div id="div_divdiv" style="width: 20px; height: 20px; background-color: red;"></div>
+
+
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var mult = `${inp_faltas.value * 100}`
+        var divi = `${mult / inp_aulas.value}`
+        var resultado = `${100 - divi}`
+
+
+        span_text.innerHTML = `Olá ${inp_nome.value}! Sua frequência foi de ${resultado}<b style="color: green;">%</b>`
+        div_divdiv.style.width = `${resultado}%`
+
+    }
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <h3 id="h3_text">Valor guardado: R$0.00</h3> <br>
+    <span id="span_text"></span> <br>
+    <span id="span_text2"></span> <br>
+
+    <button onclick="guardar()">Guardar R$5,00</button> <button onclick="gastar()">Gastar R$10,00</button>
+</body>
+</html>
+
+<script>
+    var total = 0;
+
+    function guardar(){
+        total += 5;
+
+        h3_text.innerHTML = `Valor guardado: R$${total}`
+
+         if(total < 0){
+            span_text.innerHTML = 'Finanças em perigo!'
+            span_text.style.color - 'red'
+        } else if(total < 100){
+            span_text.innerHTML = 'Finanças OK!'
+            span_text.style.color - 'blue'   
+        } else /*if (total > 100)*/{ span_text2.innerHTML = '#ostentação'}
+
+        
+    }
+
+    function gastar(){
+        total -= 10;
+
+        h3_text.innerHTML = `Valor guardado: R$${total}`
+
+        if(total < -20) {
+            span_text2.innerHTML = `Quase um Corinthans!<br>`
+        } else if(total < 0){
+            span_text.innerHTML = 'Finanças em perigo!'
+            span_text.style.color - 'red'
+        } else {
+            span_text.innerHTML = 'Finanças OK!'
+            span_text.style.color - 'blue'   
+        }
+    }
+</script>

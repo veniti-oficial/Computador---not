@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio X</title>
+</head>
+<body>
+    Digite seu nome: <input type="text" name="" id="inp_nome"> <br>
+    Nota avaliação continuada: <input type="text" name="" id="inp_continuada"> <br>
+    Nota avaliação semestral: <input type="text" name="" id="inp_semestral"> <br><br>
+
+    <button onclick="calculo()">Exibir média</button> <br><br><br>
+
+<b id="b_text"> </b>
+
+</body>
+</html>
+
+<script>
+    function calculo(){
+    //    var continuada = inp_continuada.value;
+    //    var semestral = inp_semestral.value;
+
+    b_text.innerHTML = `A média do aluno ${inp_nome.value} será de ${inp_continuada.value * 0.4 + inp_semestral.value * 0.6}`; 
+
+    }
+</script>

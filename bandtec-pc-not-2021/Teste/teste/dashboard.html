@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Da acesso a lib -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    
+    <div class="header">
+      <div class="container">
+          <h1>Projeto <span class="highlight">IOT</span> Revolucionário</h1>
+      </div>
+  </div>
+
+    <div class="dash-container">
+      <!-- Farol de temperatura -->
+      <!-- <div class="graph">
+        <div class="box red">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box yellow">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box green">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+      </div> -->
+
+      <!-- Gráfico de Linhas -->
+      <div class="graph"> Média de salario minimo por ano no Pais.
+        <canvas id="myChart" style="width: 100%; height: 100%;"></canvas>
+      </div>
+
+      <!-- Gráfico de Barras -->
+      <div class="graph"> Média de salário por região.
+        <canvas id="Barras" style="width: 100%; height: 100%"></canvas>
+      </div>
+
+      <!-- Grafico Pizza -->
+      <div class="graph"> Desemprego por região em %
+        <canvas id="Pizza" style="width: 100%; height: 100%"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var vetor = ['2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'];
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: vetor,
+        datasets: [{
+            label: '# of Votes',
+            data: [540.00, 622.00, 678.00, 724.00, 788.00, 880.00, 937.00, 954.00, 998.00, 1045.00, 1100.00],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+      maintainAspectRatio: false,
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+  var ctx_barra = document.getElementById('Barras').getContext('2d');
+  var vetor_barra = ['Norte', 'Nordeste', 'Sudeste', 'Sul', 'Centro-Oeste'];
+  var myChart_barra = new Chart(ctx_barra, {
+      type: 'bar',
+      data: {
+          labels: vetor_barra,
+          datasets: [{
+              label: '# of Votes',
+              data: [1711.00, 1529.00, 2585.00, 2499.00, 2498.00],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+        maintainAspectRatio: false,
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  
+  var ctx_pizza = document.getElementById('Pizza').getContext('2d');
+  var vetor_pizza = ['Brasil', 'Norte', 'Nordeste', 'Sudeste', 'Sul', 'Centro-Oeste'];
+
+  function teste() {
+    return[
+      "yellow",
+      "purple",
+      "green",
+      "blue",
+      "red",
+      "black"
+    ]
+  }
+
+
+  var myChart_pizza = new Chart(ctx_pizza, {
+      type: 'polarArea',
+      data: {
+          labels: vetor_pizza,
+          datasets: [{
+              label: '# of Votes',
+              data: [11, 10.6, 13.6, 11.4, 6.8, 9.3],
+              backgroundColor: teste(),
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+        maintainAspectRatio: false,
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+  
+  </script>
+ 

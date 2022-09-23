@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <select name="" id="sel_café">
+        <option value="Nenhum">--Nenhum--</option>
+        <option value="Ovos">Ovos</option>
+        <option value="leite de arroz">Leite de Arroz</option>
+        <option value="Bacon">Bacon</option>
+    </select>
+
+    <br>
+
+    <select name="" id="sel_Almoço">
+        <option value="Nenhum">--Nnehum--</option>
+        <option value="bife">Bife</option>
+        <option value="Hamburguer de soja">Hamburguer de soja</option>
+        <option value="Frango Grelhado">Frango Grelhado</option>
+    </select>
+
+    <br>
+
+    <select name="" id="sel_Janta">
+        <option value="Nenhum">--Nenhum--</option>
+        <option value="picanha de soja">Picanha de soja</option>
+        <option value="Cupim">Cupim</option>
+        <option value="Coração">Coração</option>
+    </select> <br><br>
+
+    <button onclick="dogamarelo()">Sou vegano</button>
+</body>
+</html>
+
+<script>
+    function dogamarelo(){
+        if(sel_café.value == `leite de arroz` && sel_Almoço.value == `Hamburguer de soja` && sel_Janta.value == `picanha de soja`){
+            alert('Sim, você é vegano!')
+    } else{alert('Não, você não é vegano')}
+}
+
+</script>

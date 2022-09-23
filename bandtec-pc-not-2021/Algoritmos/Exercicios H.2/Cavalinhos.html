@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavalinhos</title>
+</head>
+<body>
+    nome do cavalo 1:<input type="text" name="" id="nome1"> <br>
+    nome do cavalo 2:<input type="text" name="" id="nome2"> <br>
+    nome do cavalo 3:<input type="text" name="" id="nome3"> <br> <br>
+
+    numero de voltas: <input type="text" name="" id="N_voltas"> <br><br>
+
+    tempo minimo = <input type="text" name="" id="V_min"> <br>
+    tempo Maximo = <input type="text" name="" id="V_max"> <br><br>
+
+
+    <button onclick="iniciar()">turfe</button> <br><br>
+
+    <span id="span_text"></span> <br><br>
+    <span id="span_text2"></span>
+</body>
+</html>
+
+<script>
+    function iniciar(){
+        var cavalo1 = 0;
+        var cavalo2 = 0;
+        var cavalo3 = 0;
+
+        var numeroC1 = 0;
+        var numeroC2 = 0;
+        var numeroC3 = 0;
+
+        var ganhou1 = 0;
+
+        var voltaMin = Number(V_min.value);
+        var voltaMax = Number(V_max.value);
+
+        for(var volta = 1; volta <= N_voltas.value; volta++){
+            cavalo1 = Math.random()*(voltaMax-voltaMin)+voltaMin;
+            numeroC1 = cavalo1 + numeroC1;
+               
+            
+            cavalo2 = Math.random()*(voltaMax-voltaMin)+voltaMin;
+            numeroC2 = cavalo2 + numeroC2;
+
+            cavalo3 = Math.random()*(voltaMax-voltaMin)+voltaMin;
+            numeroC3 = cavalo3 + numeroC3;
+
+            span_text.innerHTML += `<u> volta${volta}</u> <br>
+            Cavalo1 – ${cavalo1.toFixed(1)} – ${numeroC1.toFixed(1)} – Cavalo2 – ${cavalo2.toFixed(1)} – ${numeroC2.toFixed(1)} - Cavalo3 – ${cavalo3.toFixed(1)} – ${numeroC3.toFixed(1)}<br><br>`
+        }
+
+        span_text2.innerHTML = `Em 1º Lugar – <span id="span_1">CavaloXX</span> <br>
+                                Em 2º Lugar – <span id="span_2">CavaloXX</span> <br>
+                                Em 3º Lugar – <span id="span_3">CavaloXX</span> <br>` 
+
+        if(numeroC1 > numeroC2 && numeroC1 > numeroC3){
+            span_1.innerHTML = `${nome1.value}`
+        }else if((numeroC1 < numeroC2 && numeroC1 > numeroC3) || numeroC1 < numeroC3 && numeroC1 > numeroC2){
+            span_2.innerHTML = `${nome1.value}`
+        }else {span_3.innerHTML = `${nome1.value}`}
+
+
+        if(numeroC2 > numeroC1 && numeroC2 > numeroC3){
+            span_1.innerHTML = `${nome2.value}`
+        }else if((numeroC2 < numeroC1 && numeroC2 > numeroC3) || numeroC2 < numeroC3 && numeroC2 > numeroC1){
+            span_2.innerHTML = `${nome2.value}`
+        }else {span_3.innerHTML = `${nome2.value}`}
+
+
+        if(numeroC3 > numeroC2 && numeroC3 > numeroC1){
+            span_1.innerHTML = `${nome3.value}`
+        }else if((numeroC3 < numeroC2 && numeroC3 > numeroC1) || numeroC3 < numeroC1 && numeroC3 > numeroC2){
+            span_2.innerHTML = `${nome3.value}`
+        }else {span_3.innerHTML = `${nome3.value}`}
+        console.log(cavalo1)
+    }
+</script>

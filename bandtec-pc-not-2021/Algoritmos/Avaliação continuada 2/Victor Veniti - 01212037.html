@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC</title>
+</head>
+<body>
+    
+    <h2>SDA – AS MELHORES CAMISETAS DO BRASIL</h2>
+
+    Quantidade de camisetas: <input type="text" name="" id="inp_qtscamisa"> <br><br>
+
+    <select name="" id="sel_tamanho">
+        <option value="">--Escolha o tamanho--</option>
+        <option value="pequeno">Pequeno</option>
+        <option value="grande">Grande</option>
+    </select>
+
+    <select name="" id="sel_cor">
+        <option value="">--Selecione a cor--</option>
+        <option value="colorida">Camiseta Colorida</option>
+        <option value="branca">Camiseta branca</option>
+    </select>
+
+    <br>
+    <br>
+
+    Distância para entrega: <input type="text" name="" id="inp_distancia">
+    <br>
+    <button onclick="orçar()" id="but_orçar">Orçar</button>
+
+    <br>
+    <br>
+
+    <div id="div_comprar">
+
+        <div id="div_text">
+        <span id="span_text"></span> <br><br>
+        <span id="span_text2"></span> <br>
+        <span id="span_text3"></span>
+    </div>
+
+        <br>
+        <br>
+
+        <button onclick="novo()" style="display: none;" id="but_novo">Novo Orçamento</button>
+        <button onclick="comprar()" style="display: none;" id="but_comprar">Comprar</button>
+    </div>
+
+</body>
+</html>
+
+<script>
+        var total = 0;
+        var calcularD = 0; /*Calcular Distancia*/
+
+
+    function orçar(){
+
+        var qtscamiseta = inp_qtscamisa.value; /* quantas camisetas*/
+        var tamanho = sel_tamanho.value;
+        var cor = sel_cor.value;
+        var distancia = inp_distancia.value;
+
+        div_text.style.display = 'block'
+
+
+        if(qtscamiseta < 100){
+            alert('Vendemos somente no atacado')
+            div_comprar.style.display = 'none'
+        }else if(qtscamiseta > 2000){
+            alert('Consulte nosso PCP (planejamento e controle da produção)')
+            div_comprar.style.display = 'none'
+        }else if(distancia <= 0){
+            alert('Informar a distância de entrega')
+            div_comprar.style.display = 'none'
+        }else{but_orçar.style.display = 'none';
+              but_comprar.style.display = 'block'
+              but_novo.style.display = 'block'}
+
+
+        if(cor == 'branca' && tamanho == 'pequeno'){
+            total = qtscamiseta * 15;
+        }else if(cor == 'branca' && tamanho == 'grande'){
+            total = qtscamiseta * 16;
+        }else if(cor == 'colorida' && tamanho == 'pequeno'){
+            total = qtscamiseta * 17;
+        } else if(cor == 'colorida' && tamanho == 'grande'){
+            total = qtscamiseta * 18
+        }else{but_orçar.style.display = 'block'; 
+        alert('selecione uma opção');
+         div_text.style.display = 'none';
+         but_novo.style.display = 'none';
+         but_comprar.style.display = 'none  '}
+
+
+        var calcularD = 7/100 * total;
+        preçoD = calcularD;
+        
+        if(distancia > 67){
+            span_text3.innerHTML = `Para essa distância será cobrado um adicional de R$ ${preçoD.toFixed(2)} para entrega`
+        }
+
+        span_text.innerHTML = `Quantidade Solicitada: ${qtscamiseta}<br>
+                                Produto Selecionado: ${cor}<br>
+                                Tamanho Selecionado: ${tamanho}`
+
+        span_text2.innerHTML = ` O valor total das mercadorias é de R$ ${total}`
+    }
+
+    function novo(){
+
+
+        but_orçar.style.display = 'block'
+        but_comprar.style.display = 'none'
+        but_novo.style.display = 'none'
+        div_text.style.display = 'none'
+        total = 0;
+        calcularD = 0;
+    }
+
+    function comprar(){
+        var random = Math.random();
+        var Cbonus = (random*(4.5 - 2.5)+2.5).toFixed(1) /*Calcular Bonus*/
+        var bonus = Cbonus / 100 * total;
+
+        alert(`PARABÉNS!!! Você recebeu um bônus de ${Cbonus}%, na sua próxima compra você terá um bônus de R$ ${bonus.toFixed(2)}`)
+
+        div_text.style.display = 'none';
+        but_orçar.style.display = 'block';
+        but_comprar.style.display = 'none'
+        but_novo.style.display = 'none'
+
+        total = 0;
+        calcularD = 0;
+    }
+
+/*Linhas 92-96 dei a mensagem de erro se não for selecionado nenhuma das combo e escondi os botão caso nenhuma das combos fossem escolhidas*/
+/**/
+
+</script>
+

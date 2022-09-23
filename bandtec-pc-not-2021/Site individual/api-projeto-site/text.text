@@ -1,0 +1,14 @@
+    <!-- onload="validarSessao()"   -->
+    <!-- <div class="hello">
+                <h3>Olá, <span id="b_usuario"></span>!</h3>
+            </div> vai colocar o nome do usuario-->
+            <!-- <div class="btn-nav-white">
+                <a href="./mural.html">
+                    <h3>Mural de Avisos</h3>
+                </a>
+            </div> mural de avisos -->
+            <!-- <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div> -->
+
+            

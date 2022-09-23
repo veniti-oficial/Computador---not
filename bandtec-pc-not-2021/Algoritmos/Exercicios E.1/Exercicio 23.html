@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+<select name="" id="sel_especie" onchange="inicio()">
+        <option value="nada">Slecionar especie</option>
+        <option value="Oviparos">Oviparos</option>
+        <option value="Mamiferos">Mamiferos</option>
+    </select> <br> <br>
+
+    <select name="" id="sel_ovi" onchange="animalum()" style="display: none;">
+        <option value="nada">-Escolher Oviparo-</option>
+    <option value="Galinha">Galinha</option>
+    <option value="Peixe">Peixe</option>
+    <option value="Tartaruga">Tartaruga</option></select>
+
+    <select name="" id="sel_mam" onchange="animaldois()" style="display: none;">
+        <option value="">-Escolher Mamifero-</option>
+        <option value="Elefante">Elefante</option>
+        <option value="Porco">Porco</option>
+        <option value="Coelho">Coelho</option>
+    </select> <br><br>
+
+    <div id="div_sumir" style="display: none;">
+
+        <img src="" alt="" id="img_ovi" style="width: 200px;"> <br><br>
+        Valor de compra do animal:<input type="text" name="" id="inp_valor"> <br>
+
+        <button onclick="calculo()" id="but_calculo">Calcula imposto</button> <br><br>
+        <span id="span_text">Valor de compra animal</span> <br> <br>
+        
+        <span id="span_conta"></span> 
+
+
+</div>
+
+</body>
+</html>
+
+<script>
+    var Oviparos = 0;
+    var total = 0;
+
+    function inicio(){
+        if(sel_especie.value == 'nada'){
+            div_sumir.style.display = 'none'
+        }
+
+        if(sel_especie.value == `Oviparos`){
+            sel_ovi.style.display = 'block'
+        }
+
+        if(sel_especie.value == `Mamiferos`){
+            sel_mam.style.display = 'block'
+        }
+    }
+
+    function animalum(){
+        if(sel_ovi.value == `nada`){
+            img_ovi.src = ''
+        }
+
+        if(sel_ovi.value == `Galinha`){
+            img_ovi.src = './galinha.jpg'
+            div_sumir.style.display = 'block'
+        }
+
+        if(sel_ovi.value == `Peixe`){
+            img_ovi.src = './peixe.jpg'
+            div_sumir.style.display = 'block'
+        }
+
+        if(sel_ovi.value == `Tartaruga`){
+            img_ovi.src = './tartaruga.jpg'
+            div_sumir.style.display = 'block'
+        }
+    }
+
+    function animaldois(){
+
+    }
+
+    function calculo(){
+
+        span_conta.innerHTML = `O imposto sera de R$ ${Oviparos}`
+    }
+</script>

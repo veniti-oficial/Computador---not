@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seila2</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_numero" placeholder="insira um numero">  <br>
+
+    <button onclick="sorte()">Testar Minha Sotrte</button> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function sorte(){
+        if(inp_numero.value > 0 && inp_numero.value <= 100){
+        for(var i = 0; i < 20; i++){
+            var random = (Math.random()*100).toFixed();
+            if(inp_numero.value == random){
+                span_text.innerHTML = `Muito bem você e uma pessoa de sorte seu numero saiu no ${i} sorteio`
+                break
+            }else{span_text.innerHTML = `é você não tem muita sorte, pelo visto`}
+        }
+        }else{alert('insira um numero entre 0 e 100')}
+    }
+</script>

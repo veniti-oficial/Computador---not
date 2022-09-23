@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19-20</title>
+</head>
+<body>
+    <h4>ki base do Guerreiro Sayajin: 2000</h4> <br>
+
+    <img src="./goku normal.png" alt="" width="100px" id="img_goku"> <br>
+
+    <button onclick="but_goku1()">Transformar em SSJ</button>
+    <button onclick="but_goku2()">Transformar em SSJ 2</button>
+    <button onclick="but_goku3()">Transformar em SSJ 3</button>
+    <button onclick="but_goku()">Voltar para a forma Base</button>
+
+    <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function but_goku1(){
+        span_text.innerHTML = '<span style="color: blue;">ki na forma SSJ: 100000</span>'
+        img_goku.src = 'goku ssj1.png'
+    }
+
+    function but_goku2(){
+        span_text.innerHTML = '<span style="background-color: blue; color: yellow;">ki na forma SSJ: 200000</span>'
+        img_goku.src = 'goku ssj2.png'
+    }
+
+    function but_goku3(){
+        span_text.innerHTML = '<span style="background-color: yellow; color: orange;">ki na forma SSJ3: 400000</span> '
+        img_goku.src = 'goku ssj3.png'
+    }
+
+    function but_goku(){
+        span_text.innerHTML = ''
+        img_goku.src = './goku normal.png'
+    }
+</script>

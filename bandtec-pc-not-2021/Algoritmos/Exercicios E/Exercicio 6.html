@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    nota 1: <input type="text" name="" id="inp_nota1"> <br>
+    nota 2: <input type="text" name="" id="inp_nota2"> <br>
+    nota 3: <input type="text" name="" id="inp_nota3"> <br>
+
+    <button onclick="calculo()">Analisar desempenho</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var conta = (Number(inp_nota1.value) + Number(inp_nota2.value) + Number(inp_nota3.value)) / 3;
+
+    span_text.innerHTML = `Sua média foi de ${conta.toFixed(2)} <br>`
+
+    if(conta >= 9.4){
+        span_text.innerHTML += `Parabéns você e fora de serie` 
+    }
+    }
+</script>

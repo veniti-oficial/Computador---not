@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    Sabor da pizza: <input type="text" name="" id="inp_sabor"> <br>
+    Valor da pizza: <input type="text" name="" id="inp_valor"> <br>
+    quantidade de amigos: <input type="text" name="" id="inp_amigos"> <br>
+    <br>
+
+    <button onclick="calcular()">Ver valor por amigo</button> <br>
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var dividir = `${inp_valor.value / inp_amigos.value}`
+
+        span_text.innerHTML = `Cada amigo vai colaborar com <u>R$ ${dividir}</u> para a pizza de ${inp_sabor.value}`
+    }
+</script>

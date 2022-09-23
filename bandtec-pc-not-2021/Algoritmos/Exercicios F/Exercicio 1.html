@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    Temperatura Atual: <input type="text" name="" id="inp_temperatura"> <br>
+    <button onclick="calculo()">Ver situação</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_temperatura.value > 21 && inp_temperatura.value < 24){
+            span_text.innerHTML = 'Temperatura confortável'
+        } else{span_text.innerHTML = 'Temperatura DESCONFORTÁVEL'}
+    }
+</script>

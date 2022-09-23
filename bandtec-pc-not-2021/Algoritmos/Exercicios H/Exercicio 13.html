@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_dias" placeholder="dias de musculação"> <br>
+
+    <button onclick="rotina()">Exibir rotina Mensal</button> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function rotina(){
+        contador = 1;
+        contador2 = 0;
+        dias = inp_dias.value;
+        span_text.innerHTML += `Dia 1 - <b>Musculação</b><br>`
+        while(contador <= 29){
+            contador++;
+            contador2++;
+                if(contador2 == dias){
+                    contador2 = 0;
+                    span_text.innerHTML += `Dia ${contador} - <b>Musculação</b><br>`
+                }else{span_text.innerHTML += `Dia ${contador} - Comer, dormir etc<br>`}
+        }
+    }
+</script>

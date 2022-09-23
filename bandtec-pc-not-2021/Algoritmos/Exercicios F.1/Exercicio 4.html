@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <select name="" id="sel_forma">
+        <option value="nenhum">--Escolha--</option>
+        <option value="dinheiro">Dinheiro</option>
+        <option value="debito">Cartão de débito</option>
+        <option value="credito">Cartão de credito</option>
+        <option value="boleto">Boleto</option>
+    </select> <br>
+    <button onclick="analise()">Analisar compra</button> <br> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function analise(){
+        if(sel_forma.value == 'dinheiro' || sel_forma.value == 'debito'){
+            span_text.innerHTML = 'Você terá que pagar a vista'
+    } else {span_text.innerHTML = 'Pagamento podera ser parcelado'}
+    }
+</script>

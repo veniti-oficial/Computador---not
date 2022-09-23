@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção</title>
+</head>
+<body>
+    <h2>SDA – AS MELHORES CAMISETAS DO BRASIL</h2>
+
+    <input type="text" name="" id="inp_qtd" placeholder="quantidade de camisa"> <br><br>
+
+    <select name="" id="sel_tamanho">
+        <option value="">--Selecione--</option>
+        <option value="pequena">Pequena</option>
+        <option value="grande">Grande</option>
+    </select><br>
+
+    <select name="" id="sel_cor">
+        <option value="">--Selecione--</option>
+        <option value="branca">branca</option>
+        <option value="colorida">Colorida</option>
+    </select> <br><br>
+
+    <input type="text" name="" id="inp_distancia" placeholder="distancia">
+
+    <button onclick="orçar()">Orçar</button>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function orçar(){
+        var quantidade = inp_qtd.value;
+        var tamanho = sel_tamanho.value;
+        var cor = sel_cor.value;
+        var distancia = inp_distancia.value;
+
+        if(quantidade == '' && tamanho == '' && cor == ''){
+            alert('preencha todos os campos')
+        }else if(distancia <= 0){
+            alert('Informe a distancia')
+        }else{
+            if(quantidade < 100){
+                alert('Vendemos somente atacado')
+            } else if(quantidade > 2000){
+                alert('Consulte nosso PCP')
+            }
+        }
+    }
+</script>

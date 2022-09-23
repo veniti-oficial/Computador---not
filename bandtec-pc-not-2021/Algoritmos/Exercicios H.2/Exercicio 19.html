@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_idade" placeholder="Sua idade" onchange="idade(1, function(){return 3}) "> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function idade(qualquer_coisa, outra_coisa){
+        console.log(qualquer_coisa)
+        console.log(outra_coisa())
+        var idade = inp_idade.value;
+
+        for(var i = 0; i <= idade; i++){
+            if(i <= 4 && i >= 0){
+                span_text.innerHTML += `${i} anos (Primeira Infância)<br>`
+            }else if(i <= 6 && i > 4){
+                span_text.innerHTML += `${i} anos (Pré-escolar)<br>`
+            }else if(i <= 10 && i > 6){
+                span_text.innerHTML += `${i} anos (Segunda Infância)<br>`
+            }else if(i <= 18 && i > 10){
+                span_text.innerHTML += `${i} anos (Adolescência)<br>`
+            }else if(i <= 50 && i > 18){
+                span_text.innerHTML += `${i} anos (Adulto)<br>`
+            }else if (i <= 100 && i > 50){
+                span_text.innerHTML += `${i} anos (Melhor idade)<br>`
+            }else if(i > 100){
+                span_text.innerHTML += `${i} Matusalém`
+            }else{alert('Idade invalida')}
+        }
+    }
+</script>

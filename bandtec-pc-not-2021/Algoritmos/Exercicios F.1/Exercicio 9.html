@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <select name="" id="sel_ali">
+        <option value="">--Escolha--</option>
+        <option value="carne bovina">Carne Bovina</option>
+        <option value="soja">Soja</option>
+        <option value="carne suina">Carne Suina</option>
+        <option value="legumes">Legumes</option>
+        <option value="carne de peixe">Carne de Peixe</option>
+        <option value="frutas">frutas</option>
+        <option value="ovos">ovos</option>
+    </select> <br>
+    <button onclick="analise()">Tipo de alimentação</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function analise(){
+        if(sel_ali.value == 'ovos'){
+        span_text.innerHTML += 'Você não pode ser Vegano<br>'
+    }  else if(sel_ali.value == 'soja' || sel_ali.value == 'legumes' || sel_ali.value == 'frutas' || sel_ali.value == 'ovos'){
+        /*span_text.innerHTML += 'Você não pode ser Vegano<br>'*/
+        span_text.innerHTML += `Você pode ser Vegetariano<br>`
+    }
+    
+    if(sel_ali.value == 'soja' || sel_ali.value == 'legumes' || sel_ali.value == 'frutas'){
+        span_text.innerHTML += `Você pode ser Vegano`
+    } else if(sel_ali.value == 'soja' || sel_ali.value == 'legumes' || sel_ali.value == 'frutas' || sel_ali.value == 'ovos'){
+        /*span_text.innerHTML += 'Você não pode ser Vegano<br>'*/
+        span_text.innerHTML += 'Você pode ser Vegetariano'
+    } else{span_text.innerHTML = 'Você não pode ser Vegano'}
+    }
+</script>

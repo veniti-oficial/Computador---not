@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    Nota 1: <input type="text" name="" id="inp_nota1"> <br>
+    Nota 2: <input type="text" name="" id="inp_nota2"> <br>
+    <button onclick="calculo()">Verificar situação</button> <br> <br>
+    <span id="span_apagar"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var media = (Number(inp_nota1.value) + Number(inp_nota2.value)) / 2;
+
+        if(media >= 6){
+            alert('Parabén aprovado!')
+        }
+
+        if(media < 6){
+            alert('Tente outra vez...')
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+        Peso da criança : <input type="text" name="" id="inp_peso"> <br><br> 
+
+        <button onclick="mensagen()">Avaliar</button> <br><br>
+
+        <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function mensagen(){
+        if(inp_peso.value < 13.5) {
+            span_text.innerHTML = 'Abaixo do peso'
+        } else if(inp_peso.value > 21.){
+            span_text.innerHTML = 'Acima do peso'
+        } else if(inp_peso.value == 18.3){
+            span_text.innerHTML = 'Peso Perfeito'
+        } else {span_text.innerHTML = 'peso na Média'}
+    }
+</script>

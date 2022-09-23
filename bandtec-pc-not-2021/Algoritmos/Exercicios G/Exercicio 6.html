@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <button onclick="sortear()">Sortear momento do dia</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function sortear(){
+        var random = Math.random();
+        var Nrandom = random * 23;
+
+        if(Nrandom.toFixed() >= 0 && Nrandom.toFixed() <= 11){
+            span_text.innerHTML = `Bom dia, flor do dia, são ${Nrandom.toFixed()}h!`
+        }else if(Nrandom.toFixed() >= 12 && Nrandom.toFixed() <= 17){
+            span_text.innerHTML = `Boa tarde, já vai tarde! São ${Nrandom.toFixed()}h!`
+        }else{span_text.innerHTML = `Boa noite, durma bem! São ${Nrandom.toFixed()}h!`}
+        
+    }
+</script>

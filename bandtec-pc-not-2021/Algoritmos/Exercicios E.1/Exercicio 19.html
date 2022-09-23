@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    nota 1: <input type="text" name="" id="inp_nota1"> <br>
+    nota 2: <input type="text" name="" id="inp_nota2"> <br>
+    <button onclick="calculo()">Verfificar situação</button>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var conta = (Number(inp_nota1.value) + Number(inp_nota2.value)) / 2;
+
+        if(conta >= 6){
+            alert('Parabéns, aprovado!')
+        }else {alert('Tente outra vez...')}
+    }
+</script>

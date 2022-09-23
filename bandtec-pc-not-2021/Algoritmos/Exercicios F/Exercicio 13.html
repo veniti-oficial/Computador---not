@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    tempo em anos: <input type="text" name="" id="inp_anos"> <br>
+    quantidade de kilos em hectares: <input type="text" name="" id="inp_kilos"> <br>
+    dias faltados: <input type="text" name="" id="inp_falta"> <br>
+    <button onclick="analise()">Deu match?</button> <br><br>
+
+    <span id="span_text"></span> <br>
+    <img src="" alt="" id="img_imagem" height="300px">
+</body>
+</html>
+
+<script>
+    function analise(){
+        if(inp_anos.value >= 5 && inp_kilos.value >= 300 && inp_falta.value <= 5){
+            span_text.innerHTML = 'Minha filha será sua!'
+            img_imagem.src = 'https://www.noivasdoriodejaneiro.com.br/wp-content/uploads/2020/10/LaMo-0075.jpg'
+        } else{span_text.innerHTML = `Deu ruim! Trabalhe mais ${5 - inp_anos.value} anos`
+               img_imagem.src = 'https://noticiasdatv.uol.com.br/media/_versions/everybody-hates-chris-julius-dia-dos-pais_fixed_large.jpg'}
+    }
+</script>

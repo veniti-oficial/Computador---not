@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12,21</title>
+</head>
+<body>
+    Ultima série vista: <input type="text" name="" id="inp_serie"> <br>
+    total de episodeos vistos: <input type="text" name="" id="inp_numeroep"> <br>
+    <button onclick="calculo()">Verificar Nivel</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var calcular = inp_numeroep.value * 22;
+
+        
+        if(calcular > 1800){
+            span_text.innerHTML += `<br> Uau, você realmente gosta dessa série!`
+        } else{span_text.innerHTML = `Vejo que você gosta da série ${inp_serie.value}`
+}
+    }
+</script>

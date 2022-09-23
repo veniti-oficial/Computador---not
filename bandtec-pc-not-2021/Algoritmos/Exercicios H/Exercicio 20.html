@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 20</title>
+</head>
+<body>
+    <button onclick="numero()">Curto 3 e 5!</button> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function numero(){
+        var   contagem1 = 0;
+        var   contagem = 0;
+        
+        while(contagem1 < 100){
+        contagem1++;
+        var calculo = contagem1 % 3;
+        var calculo2 = contagem1 % 5;
+        span_text.innerHTML += ''
+                if(calculo != 0 && calculo2 != 0){
+                    span_text.innerHTML += `${contagem1}<br>`
+                }else if(calculo == 0){span_text.innerHTML += `<b>É TRI!</b><br>`
+            }else if(calculo2 == 0){span_text.innerHTML += `<b>É PENTA!</b><br>`
+            } if(calculo == 0 && calculo2 == 0){span_text.innerHTML += '<b>É TRI!É PENTA</b><br>'}
+        }
+    }
+
+    for(var contagem1 = 0; trem >2  && metro > 2; ){
+    }
+</script>

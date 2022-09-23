@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+}
+
+@keyframes animacao{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100%{margin-left: -400%;}
+}
+
+.div_container{
+    background-image: url(./carro1.gif);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.div_navbar{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.div_navbar ul li{
+    display: inline;
+    font-size: bold;
+    font-weight: bolder;
+    margin: 30px;
+}
+
+.div_navbar ul{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.menu{
+    list-style: none;
+    padding-left: 231px;
+    display: inline;
+    font-weight: bolder;
+}
+
+
+.logca{
+    display: inline;
+    justify-content: end;
+}
+/* .sec_carrosel{
+    overflow: hidden; Texto não ultrapassa a div
+
+}
+.sec_carrosel {
+    width: 500px;
+    height: 300px;
+    border: black 4px solid;
+    margin-top: 125px;
+    margin-left: 57px;
+    animation-name: animacao; nome da animação
+    -o-animation-duration: 20s; duração da animação
+    animation-iteration-count: infinite; Deixando a animação infinita
+}
+
+.div_carrosel div{
+    width: 100%;
+    height: 100%;
+}
+
+.div_text1{
+    color: white;
+    font-size: 49px;
+}
+
+.div_text2{
+    color: white;
+    font-size: 49px;
+}
+
+.div_text3{
+    color: white;
+    font-size: 39px;
+}
+
+.div_text4{
+    color: white;
+    font-size: 39px;
+} */
+
+.sec_carrosel {
+    width: 640px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.sec_carrosel .div_carrosel{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.sec_carrosel .div_carrosel img{
+    width: 19.9%;
+}
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_entregaZL" style="display: block;" placeholder="Entregas para ZL">
+    <input type="text" name="" id="inp_entregaZS" style="display: block;" placeholder="Entregas para ZS">
+    <input type="text" name="" id="inp_entregaZN" style="display: block;" placeholder="Entregas para ZN">
+    <input type="text" name="" id="inp_entregaZO" style="display: block;" placeholder="Entregas para ZO">
+
+<span id="span_entregaZL"></span> <br>
+<span id="span_entregaZS"></span> <br>
+<span id="span_entregaZN"></span> <br>
+<span id="span_entregaZO"></span> <br><br>
+
+<span id="span_total"></span> <br>
+
+<button onclick="Carregar()" id="but_carregar" style="display: block;">Carregar agenda</button> <br><br><br>
+</body>
+</html>
+
+<script>
+    function Carregar(){
+        var zl = inp_entregaZL.value
+        var zs = inp_entregaZS.value
+        var zn = inp_entregaZN.value
+        var zo = inp_entregaZO.value
+        var total = `${Number(zl) + Number(zs) + Number(zn) + Number(zo)}`
+
+        inp_entregaZL.style.display = 'none'
+        inp_entregaZS.style.display = 'none'
+        inp_entregaZN.style.display = 'none'
+        inp_entregaZO.style.display = 'none'
+        but_carregar.style.display = 'none'
+
+        //span_entregaZL.style.display = 'block'
+        //span_entregaZS.style.display = 'block'
+        //span_entregaZN.style.display = 'block'
+        //span_entregaZO.style.display = 'block'
+
+
+
+        span_entregaZL.innerHTML = `Entregas ZL:${zl}`
+        span_entregaZS.innerHTML = `Entregas ZS:${zs}`
+        span_entregaZN.innerHTML = `Entregas ZN:${zn}`
+        span_entregaZO.innerHTML = `Entregas ZO:${zo}`
+        span_total.innerHTML = `Entregas restantes ${total}`
+
+
+    }
+</script>
+

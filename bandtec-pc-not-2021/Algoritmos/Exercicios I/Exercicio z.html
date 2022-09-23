@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Z</title>
+</head>
+<body>
+    Digite sua nota aqui: <input type="text" name="" id="inp_nota"> <br><br>
+
+    <button style="background-color: red; color: white;" onclick="mae()">Resposta da mãe</button>
+    <button onclick="avo()">Resposta da avô</button>
+
+    <div  id="div_text"></div> <br>
+  
+    
+</body>
+</html>
+
+<script>
+    function mae(){
+        div_text.innerHTML = `NÃO FEZ MAIS QUE A SUA OBRIGAÇÃO COM ESSA NOTA: ${inp_nota.value} <br>
+                    <img style="width: 500px;" src="C:/Users/victor veniti/Desktop/bandtec-pc-not-2021/Algoritmos/Exercicios I/chris2.png">`
+
+                    inp_nota.value = '';
+    }
+
+    function avo(){
+        div_text.innerHTML = `NÃO FEZ MAIS QUE A SUA OBRIGAÇÃO COM ESSA NOTA: ${inp_nota.value} <br>
+                    <img style="width: 500px;" src="C:/Users/victor veniti/Desktop/bandtec-pc-not-2021/Algoritmos/Exercicios I/imagem2.png">`
+
+                    inp_nota.value = '';
+    }
+</script>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nota 1" id="inp_nota"> <br>
+    <input type="text" id="inp_notaa" placeholder="Nota 2"> <br> <br>
+
+    <button onclick="but_calc()">Calcular Média</button> <br>
+
+    <span id="span_text"></span>
+
+</body>
+</html>
+
+<script>
+  
+    function but_calc(){
+        var numero = `${Number(inp_nota.value) + Number(inp_notaa.value)}`;
+        var resultado = `${numero / 2}`
+
+        span_text.innerHTML = `Sua Média foi de ${resultado}`
+    }
+</script>
+

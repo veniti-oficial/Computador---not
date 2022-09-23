@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+}
+.div_container{
+    width: 80%;
+    height: 2000px;
+    margin: auto;
+}
+
+.div_info{
+    display: flex;
+    background-color: cadetblue;
+    width: 100%;
+    height: 300px;
+    margin-top: 112px;
+    border: 4px black solid;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.div_info img {
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -100px;
+    height: 260px;
+}
+

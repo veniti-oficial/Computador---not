@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    Nota do aluno: <input type="text" name="" id="inp_nota"> <br>
+    <button onclick="calculo()">Avaliar Aluno</button> <br><br>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_nota.value < 6){
+            alert('Aluno não aprovado')
+        } else if(inp_nota.value >= 8.5 && inp_nota.value <= 10){
+            alert('Aluno Exemplar!')
+        } else{alert('Aluno comum e aprovado')}
+    }
+</script>

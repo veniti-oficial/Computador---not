@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11-12</title>
+</head>
+<body>
+    Ki base: <input type="text" name="" id="inp_ki"> <br>
+    <b>Transformar em:</b> <br>
+    <button onclick="but_ssj()">SSJ</button>
+    <button onclick="but_ssj2()">SS2</button>
+    <button onclick="but_ssj3()">SS3</button> 
+
+    <br>
+    <br>
+    
+    <span id="span_text"></span> <br>
+    <span id="span_img"></span>
+</body>
+</html>
+
+<script>
+    function but_ssj(){
+        var resultado = `${inp_ki.value * 50}`
+        
+        span_text.innerHTML = `Após se transformar em ssj, o ki desse Sayajin passa a ser de ${resultado}`
+        span_img.innerHTML = '<img src="./ssj.png" alt="" style="height: 200px;">'
+    }
+    function but_ssj2(){
+        var resultado = `${inp_ki.value * 100}`
+
+        span_text.innerHTML = `Após se transformar em ssj, o ki desse Sayajin passa a ser de ${resultado}`
+        span_img.innerHTML = '<img src="./ssj2.jpg" alt="" style="height: 200px;">'
+    }
+    function but_ssj3(){
+        var resultado = `${inp_ki.value * 200}`
+
+        span_text.innerHTML = `Após se transformar em ssj, o ki desse Sayajin passa a ser de ${resultado}`
+        span_img.innerHTML = '<img src="./ssj3.jpg" alt="" style="height: 200px;">'
+    }
+</script>

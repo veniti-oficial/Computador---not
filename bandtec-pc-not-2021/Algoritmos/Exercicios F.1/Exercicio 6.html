@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h2 id="h2_text">Você ja clicou 0 vezes</h2> <br>
+    <button onclick="analise()">Clique cabalístico</button> <br><br>
+</body>
+</html>
+
+<script>
+     var total = 0;
+
+    function analise(){
+        total++;
+
+        h2_text.innerHTML = `Você ja clicou ${total} vezes`
+
+        if(total == 3 || total == 4 || total == 7 || total == 10)
+        alert(`Você clicou ${total} vezes e Juliana gosta desse número!`)
+    }
+</script>

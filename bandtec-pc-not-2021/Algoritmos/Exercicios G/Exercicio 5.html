@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <button onclick="jogar()">Jogar</button> <br><br>
+
+    <img src="" alt="" id="img_jogo" width="200px">
+</body>
+</html>
+
+<script>
+    function jogar(){
+        var random = Math.random();
+        var Naleatorio = random * 3;
+
+        if(Naleatorio.toFixed() == 1){
+            img_jogo.src = './pedra.jpg'
+        } else if(Naleatorio.toFixed() == 2){
+            img_jogo.src = './papel.jpg'
+        }else if(Naleatorio.toFixed() == 3){
+            img_jogo.src = './tesoura.jpg'
+        }
+    }
+</script>

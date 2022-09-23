@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <button onclick="but_iniciar()">Iniciar Jogo</button> <br> <br> <br>
+
+    <img src="" alt="" id="img_lutador1" onclick="img_lut1()">
+    <span id="span_div1"><div id="div_lut1" style="height: 30px; width: 100%; background-color: blue; display: none;"></div></span> <br><br><br>
+
+    <img src="" alt="" id="img_lutador2" onclick="img_lut2()"> 
+    <span id="span_div2"><div id="div_lut2" style="height: 30px; width: 100%; background-color: green; display: none"></div></span> <br><br><br>
+
+    <span id="span_golpe1"></span> <br>
+    <span id="span_golpe2"></span>  <br>
+</body>
+</html>
+
+<script>
+    var divlut1 = 100;
+    var divlut2 = 100;
+    var golpe1 = 0;
+    var golpe2 = 0;
+
+    function but_iniciar(){
+        divlut1 = 100;
+        divlut2 = 100;
+
+
+        img_lutador1.src = './lutador 1.jpg'
+        img_lutador1.style.display = 'block'
+        span_div1.innerHTML = '<div id="div_lut1" style="height: 30px; width: 100%; background-color: blue; display: block;"></div>'
+        span_golpe1.innerHTML = `Golpes sofridos pelo lutador 1: <b>0</b>`
+
+        img_lutador2.src = './lutador 2.jpg'
+        img_lutador2.style.display = 'block'
+        span_div2.innerHTML = '<div style="height: 30px; width: 100%; background-color: green; display = block">'
+        span_golpe2.innerHTML = `Golpes sofridos pelo lutador 2: <b>0</b>`
+    }
+
+    function img_lut1(){
+        divlut1 = divlut1 - 5;
+        golpe1++;
+
+        span_div1.innerHTML = `<div id="div_lut1" style="height: 30px; width: ${divlut1}%; background-color: blue; display: block;">`
+        span_golpe1.innerHTML = `Golpes sofridos pelo lutador 1: <b>${golpe1}</b>`
+    }
+
+    function img_lut2(){
+        divlut2 = divlut2 - 5;
+        golpe2++;
+
+        span_div2.innerHTML = `<div id="div_lut2" style="height: 30px; width: ${divlut2}%; background-color: green; display: block">`
+        span_golpe2.innerHTML = `Golpes sofridos pelo lutador 2: <b>${golpe2}</b>`
+    }
+</script>

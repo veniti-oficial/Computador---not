@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10,21</title>
+</head>
+<body>
+    Saldo da conta: <input type="text" name="" id="inp_saldo"> <br>
+    Valor a debitado: <input type="text" name="" id="inp_descontado"> <br>
+    <button onclick="calcular()">Analisar conta</button> <br> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var debitar = inp_saldo.value - inp_descontado.value;
+
+
+
+        if(debitar < 0){
+            span_text.innerHTML = `<b>O saldo atual da conta corrente é ${debitar}</b>`
+            span_text.style.color = `red`
+        } else {span_text.innerHTML = `O saldo atual da conta corrente é ${debitar}`}
+    }
+</script>

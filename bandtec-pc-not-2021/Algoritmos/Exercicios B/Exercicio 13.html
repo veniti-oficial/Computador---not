@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+    Horas dormidas: <input type="text" name="" id="inp_mimir"> <br>
+    <button onclick="calcular()">Calcular sono</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calcular(){
+        var cinco = `${inp_mimir.value * 0.05}`
+        var quarentaecinco = `${inp_mimir.value * 0.45}`
+        var trinta = `${inp_mimir.value * 0.30}`
+        var vinte = `${inp_mimir.value * 0.20}`
+
+        span_text.innerHTML = `Ao dormir ${inp_mimir.value} horas, você dormiu: <br>
+                                ${cinco} horas na fase 1 <br>
+                                ${quarentaecinco} horas na fase 2<br>
+                                ${trinta} horas na fase 3<br>
+                                ${vinte} horas na fase REM<br>`
+    }
+</script>

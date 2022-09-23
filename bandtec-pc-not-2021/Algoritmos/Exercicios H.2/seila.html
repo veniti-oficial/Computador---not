@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sei la</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inp_numero" placeholder="numero de 10 a 100">
+    <button onclick="sorte()">sortear</button> <br><br>
+    <span id="span_text"></span>
+    <b id="b_text"></b>
+</body>
+
+</html>
+
+<script>
+    function sorte() {
+        if (inp_numero.value >= 10 && inp_numero.value <= 100) {
+            sortear();
+        } else { alert('insira um numero de 10 a 100') }
+
+    }
+    function sortear() {
+        for (var i = 0; i < inp_numero.value; i++) {
+            var random = (Math.random() * 100).toFixed();
+            if (random % 7 == 0) {
+                span_text.innerHTML += `<b>${random}</b><br>`
+                break
+            } else {
+                span_text.innerHTML += `${random}<br>`
+            }
+        }
+    }
+</script>

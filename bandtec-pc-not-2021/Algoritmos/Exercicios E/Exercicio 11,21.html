@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11,21</title>
+</head>
+<body>
+    Quantidade de Homens no elevador: <input type="text" name="" id="inp_homens"> <br>
+    Quantidade de Mulheres no elevador: <input type="text" name="" id="inp_mulheres"> <br>
+    <button onclick="calculo()">Analisar peso</button> <br> <br>
+
+    <span id="span_text"></span> <br>
+    <span id="span_text2"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var calcularH = inp_homens.value * 80;
+        var calcularM = inp_mulheres.value * 80;
+        var total = calcularH + calcularM;
+
+
+
+        if(total > 800){
+            span_text2.innerHTML += `Será necessário descer alguém para que o elevador se movimente`
+            span_text2.style.color = `blue`
+        } else{span_text.innerHTML = `Este elevador suporta 800 kg e o peso estimado desta lotação é de ${total}`}
+    }
+</script>

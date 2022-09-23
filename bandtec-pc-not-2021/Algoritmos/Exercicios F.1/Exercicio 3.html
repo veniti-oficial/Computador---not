@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    Renda individual: <input type="text" name="" id="inp_indi"> <br>
+    Renda familiar: <input type="text" name="" id="inp_fami"> <br>
+    <button onclick="analise()">Terei o benefício</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function analise(){
+        if(inp_indi.value <= 2000 || inp_fami.value <= 3000){
+            span_text.innerHTML = 'Você terá direito ao auxílio'
+        } else{span_text.innerHTML = 'Sem direito ao auxílio'}
+    }
+</script>

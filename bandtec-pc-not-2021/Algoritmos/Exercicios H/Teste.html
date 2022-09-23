@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<body>
+    <input type="text" name="" id="inp_numi" placeholder="inicial">
+    <input type="text" name="" id="inp_num" placeholder="final">
+    <input type="text" name="" id="inp_divi" placeholder="divisivel">
+    <button onclick="teste()">clica</button> <br>
+    <span id="span_text"></span>
+</body>
+
+</html>
+
+<script>
+    function teste() {
+        var numerof = Number(inp_num.value);
+        var numeroi = Number(inp_numi.value);
+        var divisivel = Number(inp_divi.value)
+
+        span_text.innerHTML = ``
+
+        if (numeroi > numerof) {
+            for (var contagem = numeroi; contagem >= numerof; contagem--) {
+                if (contagem % divisivel == 0) {
+                    span_text.innerHTML += `${contagem}<br>`
+                }
+            }
+        } else {
+            for (var contagem = numeroi; contagem <= numerof; contagem++) {
+                if (contagem % divisivel == 0) {
+                    span_text.innerHTML += `${contagem}<br>`
+                }
+            }
+        }
+    }
+</script>

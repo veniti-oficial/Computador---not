@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <button onclick="contador()">Clica neu</button> <br><br>
+
+    <span id="span_text"></span> <br><br>
+
+    <span id="span_text2"></span>
+</body>
+</html>
+
+<script>
+    var total = 0;
+
+    function contador(){
+        total++;
+
+        span_text.innerHTML = `Você ja clicou ${total} Vezes`
+
+        if(total < 5){
+            span_text2.innerHTML = 'Dedo fraquinho, hein'
+        } else if(total <= 10) {
+            span_text2.innerHTML = 'Dedo bom, mano'
+        } else if(total <= 15) {
+            span_text2.innerHTML = 'Gosta de clicar, hein!'
+        } else{ span_text2.innerHTML = 'Eita dedo nervoso!'}
+    }
+</script>

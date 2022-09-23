@@ -1,0 +1,25 @@
+.div_pai {
+    background-color: rgb(62, 185, 144);
+    width: 500px;
+    height: 500px;
+}
+
+.div_filho {
+    background-color: rgb(223, 87, 110);
+    width: 50%;
+    height: 50%;
+}
+
+.p_filho {
+    color: white; 
+    background-color: rgb(75, 35, 75);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.div_paidois {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(182, 55, 175);
+}

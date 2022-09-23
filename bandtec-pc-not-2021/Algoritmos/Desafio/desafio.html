@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_nome" placeholder="nome"> <br>
+    <input type="text" name="" id="inp_idade" placeholder="idade"> <br>
+    <select name="" id="sel_esporte">
+        <option value="selecione">--Selecione o esporte--</option>
+        <option value="corrida">Correr</option>
+        <option value="natacao">Nadar</option>
+        <option value="ciclismo">Pedalar</option>
+    </select> <br><br>
+
+    <button onclick="fazer()">Praticar esporte</button> <br><br>
+
+    <span id="span_text"></span> <br><br>
+
+    <img src="" alt="" id="img_1">
+    <img src="" alt="" id="img_2">
+    <img src="" alt="" id="img_3">
+
+</body>
+</html>
+
+<script>
+    var distancia1 = 0;
+    var distancia2 = 0;
+    var distancia3 = 0;
+    
+    function fazer(){
+        var total = distancia1 + distancia2 + distancia3;
+        
+        var nome = inp_nome.value;
+        var idade = inp_idade.value;
+        var esporte = sel_esporte.value;
+        var calcular = Math.random() * 2;
+        var porcentagem1 = distancia1/total * 100;
+        var porcentagem2 = distancia2/total * 100;
+        var porcentagem3 = distancia3/total * 100;
+        /*var distancia1 = Number(calculardistancia.toFixed(1));*/
+        /*var distancia2 = Number(calculardistancia.toFixed(1));*/
+        /*var distancia3 = Number(calculardistancia.toFixed(1));*/
+        /*var total = Number(distancia2 + distancia3);*/
+        
+        console.log(nome.length);
+
+        /*if(nome.lenght > 3 && idade >= 18 && idade <= 80){
+            span_text.innerHTML = `Atleta:${nome} - Idade ${idade} anos <br><br>
+                                    Km correndo:${distancia1} <br>
+                                    Km nadando:${distancia2} <br>
+                                    Km pedalando:${}`
+        }else{alert('nome ou idade invalidos')}
+
+         if(nome.length > 3 && (idade >= 18 && idade <= 80) && esporte == 'natacao'){
+            distancia1 += Math.random()*2;
+        }else if(nome.length > 3 && (idade >= 18 && idade <= 80) && esporte == 'ciclismo'){
+            distancia2 += Math.random()*2;
+        }else if(nome.length > 3 && (idade >= 18 && idade <= 80) && esporte == 'ciclismo')*/
+
+        if(nome.length > 3 && (idade >= 18 && idade <= 80)){
+            if(esporte == 'corrida'){
+                if(distancia1 >= 10 && esporte == 'corrida'){
+                    alert('Você ja concluiu esse esporte, escolha outro')
+                }else{distancia1 += calcular};
+
+            }else if(esporte == 'natacao'){
+                if(distancia2 >= 10 && esporte == 'natacao'){
+                    alert('Você ja concluiu esse esporte, escolha outro')
+                }else{distancia2 += calcular;}
+
+            }else if(esporte == 'ciclismo'){
+                if(distancia3 >= 10 && esporte == 'ciclismo'){
+                    alert('Você ja concluiu esse esportte, escolha outro')
+                }else{distancia3 += calcular;}
+            }}else{alert('Nome ou Idade invalidos')};
+        
+                
+            img_1.src = `./correr.png`
+            img_2.src = `./nadar.png`
+            img_3.src = `./bicicleta.png`
+        
+
+        /*if(distancia1 >= 10 && esporte == 'corrida'){
+                alert('você ja cumpriu a meta da corrida escolha outro');
+                distancia1 = 10;
+                distancia1 = distancia1;
+        }
+
+        if(distancia2 >= 10 && esporte == 'natacao'){
+            alert('você ja cumpriu a meta da corrida escolha outro');
+            distancia2 = 10;
+            distancia2 = distancia2;
+        }
+
+        if(distancia3 >= 10 && esporte == 'ciclismo'){
+            alert('você ja cumpriu a meta da corrida escolha outro');
+            distancia3 = 10;
+            distancia3 = distancia3;
+        }*/
+            
+        
+        span_text.innerHTML = `Atleta:<b>${nome}</b> - Idade <b>${idade}</b> anos <br><br>
+                                    Km correndo: ${distancia1.toFixed(1)} (${porcentagem1.toFixed(2)}%) <br>
+                                    Km nadando: ${distancia2.toFixed(1)} (${porcentagem2.toFixed(2)}%)<br>
+                                    Km pedalando: ${distancia3.toFixed(1)} (${porcentagem3.toFixed(2)}%)<br><br>
+                                    Km total: ${total.toFixed(1)}`
+    }
+</script>

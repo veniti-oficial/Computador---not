@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11-12</title>
+</head>
+<body>
+    <span id="span_text">Valor guardado no cofrinho: R$</span> <br>
+
+    Valor depositado <input type="text" name="" id="inp_depositado"> <br><br>
+
+    <span id="span_text1">Quantidade de depósitos feitos:</span> <br> <br>
+   <span id="span_text2">    Quantidade de retiradas feitas:</span> <br> <br>
+
+
+
+    <button onclick="depositar()">Depositar</button> <button onclick="retirar()">Tirar toda grana</button>
+</body>
+</html>
+
+<script>
+    var total = 0;
+    var valorRetirado = 0;
+    var qtdDepo = 0;
+    var qtdRet = 0;
+
+    function depositar(){
+        
+        qtdDepo++;
+
+        total = total + Number(inp_depositado.value);
+
+        span_text.innerHTML = `Valor guardado no cofrinho: R$${total}`;
+        span_text1.innerHTML = `Quantidade de depósitos feitos: <b>${qtdDepo}</b>`;
+    }
+
+    function retirar(){
+
+        qtdRet++;
+
+        valorRetirado += total;
+        total = 0;
+
+        span_text.innerHTML = `Valor guardado no cofrinho: R$${total}`
+        span_text2.innerHTML = `valor guardado no cofrinho: <b>${qtdRet}</b>`
+    }
+</script> 

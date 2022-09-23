@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14,15,16</title>
+</head>
+<body>
+<input type="text" name="" id="inp_depositos" placeholder="depositos feitos"> <br>
+<input type="text" name="" id="inp_grana" placeholder="valor do deposito"> <br>
+<button onclick="grana()">Acompanhar Grana</button> <br><br>
+
+<span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function grana(){
+        var valorG = inp_grana.value;
+
+        for(var depositos = 1; depositos <= inp_depositos.value; depositos++){
+            span_text.innerHTML += `${depositos}º Mês:R$${valorG * depositos}<br>`
+            if(depositos % 3 == 0){
+                var um= 1/100 * valorG;
+                valorg = valorG + um;
+            }
+        }
+    }
+</script>

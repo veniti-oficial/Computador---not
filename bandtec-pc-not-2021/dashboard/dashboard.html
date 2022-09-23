@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<title>Vaga 01</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	<script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+	<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+	<link rel="stylesheet" href="./style.css">
+	<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+	</style>
+</head>
+	<div black; class="grafico">
+		<h1>Sensor TCRT 5000 - Proximidade</h1>
+			<section style="width:100%">
+				<canvas id="chart"></canvas>
+		<section>
+	</div>
+	
+	<script>
+
+		var context = document.getElementById("chart").getContext("2d");
+		context.canvas.width = 1000;
+		context.canvas.height = 300;
+        
+        var configuration = {
+			type: 'bar', /*Muda o tipo do grafico, ver o tipo do grafico no site de chartJS*/
+			data: {
+				datasets: [{
+					label: "Ocupado",
+					type: 'bar', /*Tambem musar aqui o tipo do grafico no mesmo da linha 37*/
+					borderColor: ['#000000'],
+					backgroundColor: ['#ff7f7f']
+				}]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						distribution: 'series',
+                        ticks: {
+                            beginAtZero:true
+                        }
+					}],
+					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Proximidade'
+                        },
+                        ticks: {
+                            beginAtZero:true
+                        }
+					}]
+				},
+				animation: {
+					duration: 2000
+				}
+			}
+        };
+        
+		var chart = new Chart(context, configuration);
+
+        //Função para obter os dados de temperatura do server
+        //Seria mais interessante fazer isso com WebSocket, porém para fins academicos, os dados serão atualizados via HTTP
+        
+        //Esse atributo dentro do contexto serve para saber qual foi o último índice processado, assim eliminado os outros elementos na
+        //hora de montar/atualizar o gráfico
+        this.lastIndexTemp = 0;
+        this.time = 0;
+
+        function get_data(){
+
+            var http = new XMLHttpRequest();
+            http.open('GET', 'http://localhost:3000/api', false);
+            http.send(null);        
+			
+            var obj = JSON.parse(http.responseText);
+            if (obj.data.length == 0){
+                return;
+            }
+
+            var _lastIndexTemp = this.lastIndexTemp;
+            this.lastIndexTemp = obj.data.length;
+            listTemp = obj.data.slice(_lastIndexTemp);
+
+            listTemp.forEach(data => {
+                //Máximo de 60 itens exibidos no gráfico
+                if (chart.data.labels.length == 5 && chart.data.datasets[0].data.length == 5){
+                    chart.data.labels.shift();
+                    chart.data.datasets[0].data.shift();
+                }
+
+                chart.data.labels.push(this.time++);
+                chart.data.datasets[0].data.push(parseFloat(data));
+                if(data == 1){
+					chart.data.datasets[0].backgroundColor = "#8b0000";
+				}else if(data == -1){
+					chart.data.datasets[0].backgroundColor = "#8b0000";
+				}
+				chart.update();
+			});
+			
+			document.getElementById('average').textContent = obj.average;
+		} 
+
+        setInterval(() => {
+			get_data();
+        }, 1000);
+
+	</script>
+</body>
+
+</html>

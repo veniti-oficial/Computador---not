@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    Hora de consumo da Netflix: <input type="text" name="" id="inp_hora"> <br>
+    <button onclick="calculo()">Ver recomendação</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_hora.value > 19 && inp_hora.value < 21){
+            span_text.innerHTML = `Não é recomendável que você assista sua série favorita no horário ${inp_hora.value}h!`
+        } else{span_text.innerHTML = `O horário ${inp_hora.value}h é adequado para assistir sua série favorita!`}
+    }
+</script>

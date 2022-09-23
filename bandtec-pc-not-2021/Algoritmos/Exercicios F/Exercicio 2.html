@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    Digite sua Renda: <input type="text" name="" id="inp_renda"> <br>
+    Digite a renda da familia: <input type="text" name="" id="inp_familia"> <br>
+
+    <button onclick="calculo()">Verificar ajuda</button> <br> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        if(inp_renda.value < 1050 && inp_familia.value < 2100){
+            span_text.innerHTML = 'Você terá direito!'
+        } else {span_text.innerHTML = 'Você NÃO terá direito'}
+    }
+</script>

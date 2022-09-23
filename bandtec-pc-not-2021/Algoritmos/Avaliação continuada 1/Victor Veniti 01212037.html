@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVALIAÇÃO cONTINUADA 1</title>
+</head>
+<body>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpT6PN3aemYsMKrt3o6K3E1x4rjg3LVnUJIQ&usqp=C" alt="" style="height: 150px;">
+
+    <br><br>
+
+    Valor do Carro: <input type="text" name="" id="inp_Vcarro"> <br>
+    Quantidade de parcelas: <input type="text" name="" id="inp_Pcarro"> <br>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKIrfs2nLFu0g7E0uBaN5wf-ConsKuaw_E_g&usqp=CAU" alt="" style="height: 150px;"> 
+    
+    <br><br>
+    Valor da Moto: <input type="text" name="" id="inp_Vmoto"> <br>
+    Quantidade de parcelas: <input type="text" name="" id="inp_Pmoto"> <br><br>
+
+    <button onclick="resultado()">Simular Compra</button> <br><br>
+    <span id="span_text"></span> <br>
+    
+
+</body>
+</html>
+
+<script>
+    function resultado(){
+        var Vcarro = `${inp_Vcarro.value}` //Vcarro = valor do carro
+        var Vmoto = `${inp_Vmoto.value}` //Vmoto = valor da moto
+        var Pcarro = `${inp_Pcarro.value}` // Pcarro = parcela do carro
+        var Pmoto = `${inp_Pmoto.value}` // Pmoto = parcela da moto
+        var valorveiculos = `${Number(inp_Vcarro.value) + Number(inp_Vmoto.value)}`
+        var gastocarro = `${Vcarro / valorveiculos * 100}`
+        var gastomoto = `${Vmoto / valorveiculos * 100}`
+        var VparcelaCarro = `${Vcarro / Pcarro}`
+        var VparcelaMoto = `${Vmoto / Pmoto}`
+
+        span_text.innerHTML = `<b><i><u>Análise dos valores de compra</u></i></b> <br>
+                                O valor <b>total</b> dos veiculos é <b>R$${valorveiculos} </b><br>
+                                O carro representa ${gastocarro}% do valor total dos veiculos e a moto ${gastomoto}% <br><br><br>
+                                <b><i><u>Análise das prestações</u></i></b> <br><br>
+                                O <span style="background-color: blue;">Carro</span> será pago em <span style="color: blue;">${Pcarro}</span> meses e cada parcela será de <span style="color: blue;">R$${VparcelaCarro}</span> <br>
+                                A <span style="background-color: green;">moto</span> será paga em <span style="color: green;">${Pmoto}</span> meses e cada parcela será de <span style="color: green;">R$${VparcelaMoto}</span> <br>
+                                <i>A soma da parcela mensal do carro e da moto é de <b>R$${Number(VparcelaCarro) + Number(VparcelaMoto)}</b></i> <br><br>
+                                <img src="https://www.doc9.com.br/wp-content/uploads/2019/01/entenda-os-beneficios-de-contratar-uma-empresa-de-logistica-forense-para-realizar-seus-calculos-judiciais-correspondente-juridico-doc9-01.jpg" alt="imagem calculos" style="width: 150px;"><br><br>
+                                <div style="background-color: blue; height: 30px; width: ${gastocarro}%;"></div> <br>
+                                <div style="background-color: green; height: 30px; width: ${gastomoto}%;"></div>
+                                `
+    }
+</script>

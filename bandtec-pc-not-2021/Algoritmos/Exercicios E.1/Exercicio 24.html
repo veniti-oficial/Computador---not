@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24</title>
+</head>
+<body>
+    Sabor da pizza: <input type="text" name="" id="inp_sabor"> <br>
+    <select name="" id="sel_sabores" onchange="fotoum()">
+        <option value="">--selecionar--</option>
+        <option value="./queijo.jpg">Queijo</option>
+        <option value="./presunto.jpg">Presunto</option>
+        <option value="./ovo.jpg">ovo</option>
+        <option value="./palmito.jpg">Palmito</option>
+        <option value="./frango.jpg">Frango</option>
+        <option value="./catupiry.jpg">Catupiry</option>
+    </select> <br>
+
+    <img src="" alt="" id="img_1" style="width: 200px;"> <br><br>
+
+    <select name="" id="sel_sabores2" onchange="fotodois()">
+        <option value="">--selecionar--</option>
+        <option value="./queijo.jpg">Queijo</option>
+        <option value="./presunto.jpg">Presunto</option>
+        <option value="./ovo.jpg">ovo</option>
+        <option value="./palmito.jpg">Palmito</option>
+        <option value="./frango.jpg">Frango</option>
+        <option value="./catupiry.jpg">Catupiry</option>
+    </select> <br>
+
+    <img src="" alt="" id="img_2" style="width: 200px;"> <br><br>
+
+    <select name="" id="sel_sabores3" onchange="fototres()">
+        <option value="">--selecionar--</option>
+        <option value="./queijo.jpg">Queijo</option>
+        <option value="./presunto.jpg">Presunto</option>
+        <option value="./ovo.jpg">ovo</option>
+        <option value="./palmito.jpg">Palmito</option>
+        <option value="./frango.jpg">Frango</option>
+        <option value="./catupiry.jpg">Catupiry</option>
+    </select> <br>
+
+    <img src="" alt="" id="img_3" style="width: 200px;"> <br> <br>
+
+    <button onchange="calculo()">Calcular Pizza!</button> <br> <br>
+
+    <span id="span_text"></span>
+
+
+</body>
+</html>
+
+<script>
+    var total = 0;
+    function fotoum(){
+        img_1.src = `${sel_sabores.value}`
+
+
+        if(sel_sabores.value == './queijo.jpg'){
+            total = 5.00;
+        }
+
+        if(sel_sabores.value == './presunto.jpg'){
+            total += 7.00
+        }
+        
+
+    }
+
+    function fotodois(){
+        img_2.src = `${sel_sabores2.value}`
+    }
+
+    function fototres(){
+        img_3.src = `${sel_sabores3.value}`
+    }
+
+    function calculo(){
+    
+    }
+</script>

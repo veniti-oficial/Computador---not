@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    intervalo inicial: <input type="text" name="" id="inp_inicial"> <br>
+    intervalo final: <input type="text" name="" id="inp_final"> <br><br>
+
+    nome do candidato: <input type="text" name="" id="inp_nome"> <br>
+    altura do candidato: <input type="text" name="" id="inp_altura"> <br> <br>
+    <button onclick="analisar()">Analisar</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function analisar(){
+
+            if(inp_altura.value > inp_inicial.value && inp_altura.value < inp_final.value){
+            span_text.innerHTML += `O candidato ${inp_nome.value} com altura de ${inp_altura.value} participará do processo de seleção de piloto <br>`
+        }else if(inp_final.value < inp_inicial.value){
+            alert('Altura final não valida')
+        }else{span_text.innerHTML += `Infelizmente o candidato ${inp_nome.value} com altura de ${inp_altura.value} não atende os requisitos <br>`}
+            
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    Renda familiar: <input type="text" name="" id="inp_renda"> <br>
+    Valor da prestação: <input type="text" name="" id="inp_prestacao"> <br>
+    <button onclick="calculo()">Verificar financiamento</button> <br> <br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function calculo(){
+        var Vprestacao = inp_prestacao.value / inp_renda.value * 100;
+
+        span_text.innerHTML = `a prestação corresponde a ${Vprestacao.toFixed(2)}% da renda familiar <br>`
+
+        if(Vprestacao > 30){
+            span_text.innerHTML += `<b id="b_text">Será necessário complementar a renda familiar</b>`
+            b_text.style.color = `red`
+        }
+    }
+</script>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_nome" placeholder="Nome da pessoa que mais ama">
+    <input type="text" name="" id="inp_quanto" placeholder="Quanto você ama?"> <br>
+
+    <button onclick="calcular()">Expressar Amor</button> <br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    
+    function calcular(){
+        var contador = 0;
+        var quanto = Number(inp_quanto.value);
+        var nome = inp_nome.value;
+        
+
+
+        while(contador <= quanto){
+            contador++
+            span_text.innerHTML += `<b>${nome}</b>, eu te amo! Sempre lembre disso!<br>`
+        }   
+    }
+</script>

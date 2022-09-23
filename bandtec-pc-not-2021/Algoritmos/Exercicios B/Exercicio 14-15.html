@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14-15</title>
+</head>
+<body>
+    votos friezza: <input type="text" name="" id="inp_eleitor1"> <br>
+    votos jp: <input type="text" name="" id="inp_eleitor2"><br>
+    votos brancos: <input type="text" name="" id="inp_branco"><br>
+    votos nulos: <input type="text" name="" id="inp_nulos"><br><br>
+
+    <button onclick="but_resultado()">Resultado da Eleição</button> <br><br>
+
+    <span id="span_text"></span>
+  
+
+
+</body>
+</html>
+
+<script>
+    function but_resultado(){
+        var valorx = `${Number(inp_branco.value) + Number(inp_nulos.value)}`
+        var total = `${Number(inp_eleitor1.value) + Number(inp_eleitor2.value) + Number(inp_branco.value) + Number(inp_nulos.value)}`
+        var elei1 = `${inp_eleitor1.value / total * 100}` 
+        var elei2 = `${inp_eleitor2.value / total * 100}`
+        var invalidos = `${valorx / total * 100}`
+
+        span_text.innerHTML = `<b>Total de votos: <u>${total}</u></b> <br><br>
+                                    <b>Fiezza:</b> ${elei1}%<br>
+                                    <div style="background-color: red; height: 20px; width: ${elei1}%;"></div>
+                                    <b>jp:</b> ${elei2}%<br>
+                                    <div style="background-color: blue; height: 20px; width: ${elei2}%;"></div>
+                                    <b>Inválidos:</b>${invalidos}%<br>
+                                    <div style="background-color: orange; height: 20px; width: ${invalidos}%;"></div>`
+    }
+</script>

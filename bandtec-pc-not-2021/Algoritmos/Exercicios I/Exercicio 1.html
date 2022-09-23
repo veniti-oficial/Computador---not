@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <input type="text" name="" id="inp_fruta" placeholder="nome da fruta"> <button onclick="pesquisar()">Pesquisar</button><br><br>
+
+    <span id="span_text"></span>
+</body>
+</html>
+
+<script>
+    function pesquisar(){
+        var vetFruta = ['abacaxi', 'laranja', 'maracuja'];
+
+        if(vetFruta.indexOf(inp_fruta.value) >= 0){
+            span_text.innerHTML = `A fruta ${inp_fruta.value} existe na lista`
+        }else{span_text.innerHTML = `A fruta ${inp_fruta.value} não existe na lista`}
+
+
+    }
+</script>
